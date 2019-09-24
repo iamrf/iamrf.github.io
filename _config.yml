@@ -68,3 +68,8 @@ permalink: /:categories/:year/:month/:day/:title/   # or use >> permalink: prett
 collections:
   podcasts:   # set the podcasts collection
     output: true
+  portfolio:
+    output: true
+  articles:
+    output: true
+  
