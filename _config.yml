@@ -56,3 +56,15 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+#   Permalinks allow us to structure the directories of our source code different 
+#   from the directories in our output.
+permalink: /:categories/:year/:month/:day/:title/   # or use >> permalink: pretty
+
+
+#   Collections are a great way to group related content like members of a team or 
+#   talks at a conference.
+collections:
+  podcasts:   # set the podcasts collection
+    output: true
