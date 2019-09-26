@@ -9,7 +9,38 @@
 }
 
 body{
-  font-family: 'byekan';
+  direction: rtl;
+  font-family: 'byekan','ubuntu', Tahoma, 'Segoe UI', Verdana, sans-serif;
+  background-color: rgb(250, 250, 250);
+  transition: .5s;
+  overflow-x: hidden;
+  font-size: 1rem !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 2;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-fit {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.rtl {
+  direction: rtl !important;
 }
 
 nav ul a,
@@ -26,20 +57,21 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
+  min-height: 100vh;
   height: auto;
   color: rgba(255,255,255,.9);
+}
+
+.parallax-container h5{
+  line-height: 3rem;
+  font-size: 1.2rem;
+
 }
   .parallax-container .section {
     width: 100%;
   }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
   #index-banner .section {
     top: 10%;
   }
@@ -62,3 +94,12 @@ footer.page-footer {
   margin: 0;
 }
 
+#top a{
+  color: #fff;
+  transition: .5s;
+}
+
+#top a:hover{
+  color: yellow;
+  transition: .5s;
+}

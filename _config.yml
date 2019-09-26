@@ -72,4 +72,6 @@ collections:
     output: true
   articles:
     output: true
+  travels:
+    output: true
   
