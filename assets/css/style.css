@@ -103,3 +103,9 @@ footer.page-footer {
   color: yellow;
   transition: .5s;
 }
+
+.next-section-btn{
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+}
