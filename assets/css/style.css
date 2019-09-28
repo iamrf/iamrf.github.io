@@ -57,9 +57,14 @@ p {
 }
 
 .parallax-container {
-  min-height: 100vh;
+  min-height: 380px;
   height: auto;
   color: rgba(255,255,255,.9);
+}
+
+#index-banner{
+  min-height: 100vh !important;
+  height: auto;
 }
 
 .parallax-container h5{
@@ -80,6 +85,9 @@ p {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  .next-section-btn{
+    right: 44% !important;
   }
 }
 
@@ -106,6 +114,6 @@ footer.page-footer {
 
 .next-section-btn{
   position: absolute;
-  bottom: 0;
-  right: 45%;
+  bottom: -2px;
+  right: 48%;
 }
