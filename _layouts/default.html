@@ -1,25 +1,28 @@
+---
+
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'fa' }}">
 
-{% include head.html %}
+  {% include head.html %}
 
-<body>
+  <body>
 
-{% include navbar.html %}
+    {% include navbar.html %}
 
-<div class="clearfix"></div>
+    <div class="clearfix"></div>
 
-{{ content}}
+    {{ content}}
 
-<div class="clearfix"></div>
+    <div class="clearfix"></div>
 
-  <!--  Scripts-->
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/init.js"></script>
+    <!--  Scripts-->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="{{ site.url }}/assets/js/materialize.js"></script>
+    <script src="{{ site.url }}/assets/js/init.js"></script>
 
   </body>
 </html>
