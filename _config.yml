@@ -77,3 +77,11 @@ collections:
   travels:
     output: true
   
+
+#   _includes/follow-buttons.html variables
+facebook_url: https:/fb.com/rf.fallah
+twitter_url: 
+linkedin_url: 
+googleplus_url:
+pinterest_url:
+instagram_url: https://instagram.com/rf.fa
