@@ -97,6 +97,11 @@ p {
   }
 }
 
+.material-icons.md-2 { font-size: 2rem; }
+.material-icons.md-3 { font-size: 3rem; }
+.material-icons.md-4 { font-size: 4rem; }
+.material-icons.md-5 { font-size: 5rem; }
+
 .icon-block {
   padding: 0 15px;
 }
@@ -122,5 +127,15 @@ footer.page-footer {
   position: absolute;
   bottom: -2px;
   right: 48%;
+}
+
+#blog-latest-post{
+  margin-bottom: 4rem;
+}
+
+#blog-latest-post-head{
+  border-bottom-left-radius: .7rem;
+  border-bottom-right-radius: .7rem;
+  padding: 3rem;
 }
 
