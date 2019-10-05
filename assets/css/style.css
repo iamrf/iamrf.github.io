@@ -63,8 +63,7 @@ p {
 }
 
 #index-banner{
-  min-height: 100vh !important;
-  height: auto;
+  height: 100vh !important;
 }
 
 .parallax-container h5{

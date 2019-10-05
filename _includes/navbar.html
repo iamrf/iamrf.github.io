@@ -8,6 +8,7 @@
                         <li><a href="{{ page.url }}"> {{ page.title }} </a></li>
                     {% endif %}
                 {% endfor %}
+                <li><a href="{{ site.url }}/feed.xml"><i class="fa fa-rss"></i></a></li>
             </ul>
 
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -22,4 +23,5 @@
         <li><a href="{{ page.url }}"> {{ page.title }} </a></li>
         {% endif %}
     {% endfor %}
+    <li><a href="{{ site.url }}/feed.xml"><i class="fa fa-rss"></i></a></li>
 </ul>
