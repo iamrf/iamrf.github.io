@@ -86,6 +86,10 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  #about-pic{
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -139,3 +143,7 @@ footer.page-footer {
   padding: 3rem;
 }
 
+#about-box{
+  text-align: justify;
+  padding: 4rem 1rem 8rem;
+}
