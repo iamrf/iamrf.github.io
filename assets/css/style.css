@@ -98,7 +98,7 @@ p {
   }
   .next-section-btn{
     right: 44% !important;
-  }
+  }  
 }
 
 .material-icons.md-2 { font-size: 2rem; }
@@ -151,4 +151,8 @@ footer.page-footer {
 
 #link-to-blog{
   padding: 3rem;
+}
+
+#header-top-icons{
+  margin-top: 5%;
 }
