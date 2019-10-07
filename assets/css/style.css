@@ -8,6 +8,15 @@
   src: url('../fonts/YekanWeb-Regular.woff');
 }
 
+*{
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   direction: rtl;
   font-family: 'byekan','ubuntu', Tahoma, 'Segoe UI', Verdana, sans-serif;
@@ -136,7 +145,7 @@ footer.page-footer {
 #blog-latest-post-head{
   border-bottom-left-radius: .7rem;
   border-bottom-right-radius: .7rem;
-  padding: 3rem;
+  padding: 4rem 0;
 }
 
 #about-box{
@@ -150,9 +159,10 @@ footer.page-footer {
 }
 
 #link-to-blog{
-  padding: 3rem;
+  padding: 5rem;
 }
 
 #header-top-icons{
   margin-top: 5%;
 }
+
