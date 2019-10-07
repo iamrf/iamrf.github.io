@@ -133,10 +133,6 @@ footer.page-footer {
   right: 48%;
 }
 
-#blog-latest-post{
-  margin-bottom: 4rem;
-}
-
 #blog-latest-post-head{
   border-bottom-left-radius: .7rem;
   border-bottom-right-radius: .7rem;
@@ -146,4 +142,13 @@ footer.page-footer {
 #about-box{
   text-align: justify;
   padding: 4rem 1rem 8rem;
+}
+
+#blog-latest-post-body{
+  padding-top: 3rem;
+  transition: .5s;
+}
+
+#link-to-blog{
+  padding: 3rem;
 }

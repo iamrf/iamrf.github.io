@@ -3,21 +3,25 @@
         <div id="blog-latest-post">
             <div class="row">
                 <div id="blog-latest-post-head" class="col s12 center grey darken-3 grey-text text-lighten-3">
-                    <h3>
-                            <i class="material-icons md-3">book</i>&nbsp;
+                    <h4>
+                            <i class="fa fa-book"></i>&nbsp;
                             آخرین مطالب وبلاگ
-                    </h3>
+                    </h4>
                 </div>
                 {% for post in site.posts | limit: 3%}
-                    <div class="col s12 m12 l4">
-                        <a href="{{ post.url }}" class="grey-text text-darken-3"><h5>{{ post.title }}</h5></a>
+                    <div id="blog-latest-post-body" class="col s12 m12 l4">
+                        <a href="{{ post.url }}" class="grey-text text-darken-3"><h5><i class="material-icons tiny">chevron_left</i> {{ post.title }}</h5></a>
                         <p>{{ post.excerpt }}</p>
-                        <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-red">ادامه مطلب</a>
+                        <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
                         
                         <div class="clearfix"></div>
                         <div class="divider hide-on-large-only"></div>
                     </div> 
                 {% endfor %}
+
+                <div id="link-to-blog" class="col s12 center">
+                    <a href="{{ site.url }}/blog" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده وبلاگ      </a>
+                </div>
 
             </div>
         </div>
