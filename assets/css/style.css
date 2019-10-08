@@ -152,10 +152,10 @@ footer.page-footer {
   right: 48%;
 }
 
-#blog-latest-post-head{
+.section-head-1{
   border-bottom-left-radius: .7rem;
   border-bottom-right-radius: .7rem;
-  padding: 4rem 0;
+  padding: 4rem 0 !important;
 }
 
 #about-box{

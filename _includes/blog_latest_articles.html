@@ -1,10 +1,17 @@
 <section id="blog-latest-articles">
     <div class="container">
         <div class="row">
-            {% for article in site.articles | limit:3 %}
-                <div class="col s12 m4">
+            <div id="" class="col s12 center grey darken-3 grey-text text-lighten-3 section-head-1">
+                <h4>
+                        <i class="fa fa-list-alt"></i>&nbsp;
+                        آخرین مقاله ها
+                </h4>
+            </div>
+            {% assign articles = site.articles | reverse %}
+            {% for article in articles | limit:3 %}
+                <div class="col s12 m12 l4">
                     <div class="card">
-                        <span class="card-title">{{ article.title }}</span>
+                        <span class="card-title"><a href="{{ article.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ article.title }}</a></span>
                         {% if article.thumbnail %}
                         <picture>
                             <img src="{{ site.url }}/{{ article.thumbnail }}" alt="{{ post.title }}" class="img-fit">
@@ -12,7 +19,7 @@
                         {% endif %}
                         <div class="card-content"><p>{{ article.excerpt }}</p></div>
                         
-                        <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
+                        <a href="{{ article.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
 
                         <div class="clearfix"></div>
                     </div>
@@ -20,7 +27,7 @@
             {% endfor %}
 
             <div id="" class="col s12 center link-to-collections">
-                <a href="{{ site.url }}/blog" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده مقالات      </a>
+                <a href="{{ site.url }}/articles" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده مقالات      </a>
             </div>
 
         </div>
