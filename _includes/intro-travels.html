@@ -1,13 +1,23 @@
 {% if site.travels %}
 <section id="intro-travels">
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h4>
+                            <i class="fa fa-tree"></i>&nbsp;
+                            سفرنامه
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="{{ site.url }}/assets/img/background3.jpg" alt="سفرنامه"></div>
+    </div>
+
     <div class="container">
         <div class="row">
-            <div id="" class="col s12 center grey darken-3 grey-text text-lighten-3 section-head-1">
-                <h4>
-                        <i class="fa fa-tree"></i>&nbsp;
-                        سفرنامه
-                </h4>
-            </div>
+            
             {% assign travels = site.travels | reverse %}
             {% for travel in travels | limit:3 %}
                 <div class="col s12 m12 l4">

@@ -1,13 +1,23 @@
 <section id="blog-latest-posts">
-    <div class="container">
-        <div id="blog-latest-post">
-            <div class="row">
-                <div id="" class="col s12 center grey darken-3 grey-text text-lighten-3 section-head-1">
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
                     <h4>
                             <i class="fa fa-book"></i>&nbsp;
                             آخرین مطالب وبلاگ
                     </h4>
                 </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="{{ site.url }}/assets/img/background2.jpg" alt="آخرین مطالب وبلاگ"></div>
+    </div>
+
+    <div class="container">
+        <div id="blog-latest-post">
+            <div class="row">
+
                 {% for post in site.posts | limit: 3%}
                     <div id="blog-latest-post-body" class="col s12 m12 l4">
                         <div class="card">
