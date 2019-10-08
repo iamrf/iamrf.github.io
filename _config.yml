@@ -29,6 +29,15 @@ github_username:  iamrf
 instagram_username: arefallah
 linkedin_username: aref-fallah
 
+#Others
+markdown: kramdown
+
+# Syntax highlighting
+highlighter: rouge
+kramdown:
+    input: GFM 
+    syntax_highlighter: rouge
+
 # Build settings
 theme: minima
 plugins:
