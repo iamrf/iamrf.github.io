@@ -11,6 +11,9 @@
                 {% for post in site.posts | limit: 3%}
                     <div id="blog-latest-post-body" class="col s12 m12 l4">
                         <a href="{{ post.url }}" class="grey-text text-darken-3"><h5><i class="material-icons tiny">chevron_left</i> {{ post.title }}</h5></a>
+                        {% if post.thumbnail %}
+                            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="img-fit">
+                        {% endif %}
                         <p>{{ post.excerpt }}</p>
                         <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
                         

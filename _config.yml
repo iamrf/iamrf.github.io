@@ -77,6 +77,7 @@ permalink: /:categories/:year/:month/:day/:title/   # or use >> permalink: prett
 collections:
   podcasts:   # set the podcasts collection
     output: true
+    permalink: /podcasts/:title/
   portfolio:
     output: true
   articles:

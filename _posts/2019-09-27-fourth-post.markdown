@@ -3,6 +3,7 @@ layout: post
 title:  "پست چهارم"
 date:   2019-09-27 05:48:56 -0400
 categories: jekyll update
+thumbnail: 'https://i.pinimg.com/originals/58/cb/5e/58cb5e331509c8910def8ef339186dc8.jpg'
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

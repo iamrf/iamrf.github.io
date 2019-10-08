@@ -175,3 +175,8 @@ footer.page-footer {
 #header-top-icons{
   margin-top: 5%;
 }
+
+#blog-latest-post-body img{
+  border-radius: .5rem;
+  margin-top: .8rem;
+}
