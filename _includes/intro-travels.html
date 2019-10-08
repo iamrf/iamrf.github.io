@@ -1,3 +1,4 @@
+{% if site.travels %}
 <section id="intro-travels">
     <div class="container">
         <div class="row">
@@ -11,7 +12,7 @@
             {% for travel in travels | limit:3 %}
                 <div class="col s12 m12 l4">
                     <div class="card">
-                        <span class="card-title"><a href="{{ travel.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ travel.title }}</a></span>
+                        <span class="card-title"><a href="{{ travel.url }}" class="grey-text text-darken-3"><i class="fa fa-map-signs"></i>&nbsp;   {{ travel.title }}</a></span>
                         {% if travel.thumbnail %}
                         <picture>
                             <img src="{{ site.url }}/{{ travel.thumbnail }}" alt="{{ travel.title }}" class="img-fit">
@@ -33,3 +34,4 @@
         </div>
     </div>
 </section>
+{% endif %}

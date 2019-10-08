@@ -77,13 +77,17 @@ permalink: /:categories/:year/:month/:day/:title/   # or use >> permalink: prett
 collections:
   podcasts:   # set the podcasts collection
     output: true
-    permalink: /podcasts/:title/
+    permalink: /:collection/:title/
   portfolio:
     output: true
+    permalink: /:collection/:title/
   articles:
     output: true
+    permalink: /:collection/:title/
   travels:
     output: true
+    permalink: /:collection/:title/
+
   
 
 #   _includes/follow-buttons.html variables
