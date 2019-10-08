@@ -1,0 +1,35 @@
+<section id="intro-travels">
+    <div class="container">
+        <div class="row">
+            <div id="" class="col s12 center grey darken-3 grey-text text-lighten-3 section-head-1">
+                <h4>
+                        <i class="fa fa-tree"></i>&nbsp;
+                        سفرنامه
+                </h4>
+            </div>
+            {% assign travels = site.travels | reverse %}
+            {% for travel in travels | limit:3 %}
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <span class="card-title"><a href="{{ travel.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ travel.title }}</a></span>
+                        {% if travel.thumbnail %}
+                        <picture>
+                            <img src="{{ site.url }}/{{ travel.thumbnail }}" alt="{{ travel.title }}" class="img-fit">
+                        </picture>
+                        {% endif %}
+                        <div class="card-content"><p>{{ travel.excerpt }}</p></div>
+                        
+                        <a href="{{ travel.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب + گالری تصاویر</a>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div id="" class="col s12 center link-to-collections">
+                <a href="{{ site.url }}/travels" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده همه سفرنامه ها      </a>
+            </div>
+
+        </div>
+    </div>
+</section>
