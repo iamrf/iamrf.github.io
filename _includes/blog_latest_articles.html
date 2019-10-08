@@ -1,0 +1,28 @@
+<section id="blog-latest-articles">
+    <div class="container">
+        <div class="row">
+            {% for article in site.articles | limit:3 %}
+                <div class="col s12 m4">
+                    <div class="card">
+                        <span class="card-title">{{ article.title }}</span>
+                        {% if article.thumbnail %}
+                        <picture>
+                            <img src="{{ site.url }}/{{ article.thumbnail }}" alt="{{ post.title }}" class="img-fit">
+                        </picture>
+                        {% endif %}
+                        <div class="card-content"><p>{{ article.excerpt }}</p></div>
+                        
+                        <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div id="" class="col s12 center link-to-collections">
+                <a href="{{ site.url }}/blog" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده مقالات      </a>
+            </div>
+
+        </div>
+    </div>
+</section>

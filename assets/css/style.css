@@ -163,20 +163,29 @@ footer.page-footer {
   padding: 4rem 1rem 8rem;
 }
 
-#blog-latest-post-body{
-  padding-top: 3rem;
-  transition: .5s;
-}
-
-#link-to-blog{
-  padding: 5rem;
+.link-to-collections a{
+  margin: 5rem 0;
 }
 
 #header-top-icons{
   margin-top: 5%;
 }
 
-#blog-latest-post-body img{
-  border-radius: .5rem;
+.card{
+  padding: 1rem 0;
+  margin: 4rem 0 0;
+  border-top-left-radius: .7rem;
+  border-top-right-radius: .7rem;
+}
+
+.card img{
   margin-top: .8rem;
+}
+
+.card-title{
+  padding: 1rem;
+}
+
+.card-content p{
+  text-align: justify;
 }

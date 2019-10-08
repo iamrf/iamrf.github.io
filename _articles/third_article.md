@@ -1,8 +1,8 @@
 ---
 layout: post
 author: aref
-title: مقاله اول من
-date:   2018-01-01 05:48:56 -0400
+title: مقاله سوم من
+date:   2018-03-01 05:48:56 -0400
 thumbnail: 'files/img/background1.jpg'
 ---
 

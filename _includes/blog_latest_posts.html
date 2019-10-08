@@ -10,23 +10,26 @@
                 </div>
                 {% for post in site.posts | limit: 3%}
                     <div id="blog-latest-post-body" class="col s12 m12 l4">
-                        <a href="{{ post.url }}" class="grey-text text-darken-3"><h5><i class="material-icons tiny">chevron_left</i> {{ post.title }}</h5></a>
+                        <div class="card">
+                            <span class="card-title">
+                                <a href="{{ post.url }}" class="grey-text text-darken-3"><i class="material-icons tiny">chevron_left</i> {{ post.title }}</a>
+                            </span>
+                            {% if post.thumbnail %}
+                            <picture>
+                                <img src="{{ site.url }}/{{ post.thumbnail }}" alt="{{ post.title }}" class="img-fit">
+                            </picture> 
+                            {% endif %}
+                            <div class="card-content">
+                                <p>{{ post.excerpt }}</p>
+                            </div>
+                            <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
 
-                        {% if post.thumbnail %}
-                        <picture>
-                            <img src="{{ site.url }}/{{ post.thumbnail }}" alt="{{ post.title }}" class="img-fit">
-                        </picture> 
-                        {% endif %}
-
-                        <p>{{ post.excerpt }}</p>
-                        <a href="{{ post.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
-                        
-                        <div class="clearfix"></div>
-                        <div class="divider hide-on-large-only"></div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div> 
                 {% endfor %}
 
-                <div id="link-to-blog" class="col s12 center">
+                <div id="" class="col s12 center link-to-collections">
                     <a href="{{ site.url }}/blog" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده وبلاگ      </a>
                 </div>
 
