@@ -204,3 +204,19 @@ footer.page-footer {
   border-top-left-radius: .7rem;
   border-top-right-radius: .7rem;
 }
+
+#post{
+  margin: 6rem 0 0;
+}
+
+.post{
+  padding: .5rem 1rem;
+}
+
+.post h1{
+  font-size: 2rem !important;
+}
+
+#breadcrumbs{
+  direction: ltr !important;
+}
