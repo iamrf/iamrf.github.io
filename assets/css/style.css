@@ -38,6 +38,7 @@ pre{
   text-align: left;
   padding: .5rem .5rem;
   color: #eee;
+  overflow-x: auto;
 }
 
 .navbar-fixed{
@@ -205,7 +206,7 @@ footer.page-footer {
   border-top-right-radius: .7rem;
 }
 
-#post{
+.under-navbar{
   margin: 6rem 0 0;
 }
 

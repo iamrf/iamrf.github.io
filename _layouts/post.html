@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section id="post">
+<section class="under-navbar">
   <div class="container">
     <div class="row">
 
@@ -18,13 +18,18 @@ layout: default
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               {{ page.date | date: date_format }}
             </time><br>
-            <i class="fa fa-user"></i> &nbsp;
+
             {%- if page.author -%}
-              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><i class="fa fa-user"></i> &nbsp; {{ page.author }}</span></span>
             {%- endif -%}</p>
         </header>
 
         <div class="post-content e-content" itemprop="articleBody">
+          {% if page.thumbnail %}
+            <picture>
+                <img src="{{ site.url }}/{{ page.thumbnail }}" alt="{{ page.title }}" class="img-fit">
+            </picture>
+          {% endif %}
           {{ content }}
         </div>
 
