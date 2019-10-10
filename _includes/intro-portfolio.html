@@ -1,0 +1,47 @@
+{% if site.portfolio %}
+<section id="portfolio">
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h4>
+                            <i class="fa fa-list-alt"></i>&nbsp;
+                            نمونه کار
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="{{ site.url }}/assets/img/background1.jpg" alt="آخرین مقاله ها"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            
+            {% assign portfolio = site.portfolio | reverse %}
+            {% for portfo in portfolio | limit:4 %}
+                <div class="col s12 m12 l6">
+                    <div class="card">
+                        <span class="card-title"><a href="{{ portfo.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ portfo.title }}</a></span>
+                        {% if portfo.thumbnail %}
+                        <picture>
+                            <img src="{{ site.url }}/{{ portfo.thumbnail }}" alt="{{ post.title }}" class="img-fit">
+                        </picture>
+                        {% endif %}
+                        <div class="card-content"><p>{{ portfo.excerpt }}</p></div>
+                        
+                        <a href="{{ portfo.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مقاله</a>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div id="" class="col s12 center link-to-collections">
+                <a href="{{ site.url }}/portfolio" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده همه مقاله ها      </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endif %}
