@@ -21,7 +21,7 @@
             {% assign travels = site.travels | reverse %}
             {% for travel in travels | limit:3 %}
                 <div class="col s12 m12 l4">
-                    <div class="card">
+                    <article id="{{ travel.title }}" class="card">
                         <span class="card-title"><a href="{{ travel.url }}" class="grey-text text-darken-3"><i class="fa fa-map-signs"></i>&nbsp;   {{ travel.title }}</a></span>
                         {% if travel.thumbnail %}
                         <picture>
@@ -33,7 +33,7 @@
                         <a href="{{ travel.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب + گالری تصاویر</a>
 
                         <div class="clearfix"></div>
-                    </div>
+                    </article>
                 </div>
             {% endfor %}
 

@@ -12,20 +12,20 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="{{ site.url }}/assets/img/background1.jpg" alt="آخرین مقاله ها"></div>
+        <div class="parallax"><img src="{{ site.url }}/assets/img/background2.jpg" alt="آخرین مقاله ها"></div>
     </div>
 
     <div class="container">
         <div class="row">
-            
+
             {% assign portfolio = site.portfolio | reverse %}
             {% for portfo in portfolio | limit:4 %}
                 <div class="col s12 m12 l6">
-                    <div class="card">
+                    <article id="{{ portfo.title }}" class="card">
                         <span class="card-title"><a href="{{ portfo.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ portfo.title }}</a></span>
                         {% if portfo.thumbnail %}
                         <picture>
-                            <img src="{{ site.url }}/{{ portfo.thumbnail }}" alt="{{ post.title }}" class="img-fit">
+                            <img src="{{ site.url }}/{{ portfo.thumbnail }}" alt="{{ portfo.title }}" class="img-fit">
                         </picture>
                         {% endif %}
                         <div class="card-content"><p>{{ portfo.excerpt }}</p></div>
@@ -33,12 +33,12 @@
                         <a href="{{ portfo.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مقاله</a>
 
                         <div class="clearfix"></div>
-                    </div>
+                    </article>
                 </div>
             {% endfor %}
 
             <div id="" class="col s12 center link-to-collections">
-                <a href="{{ site.url }}/portfolio" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده همه مقاله ها      </a>
+                <a href="{{ site.url }}/portfolio" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      رفتن به صفحه نمونه کارها      </a>
             </div>
 
         </div>

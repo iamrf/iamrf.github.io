@@ -21,7 +21,7 @@
             {% assign articles = site.articles | reverse %}
             {% for article in articles | limit:3 %}
                 <div class="col s12 m12 l4">
-                    <div class="card">
+                    <article id="{{ post.title }}" class="card">
                         <span class="card-title"><a href="{{ article.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ article.title }}</a></span>
                         {% if article.thumbnail %}
                         <picture>
@@ -33,7 +33,7 @@
                         <a href="{{ article.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مقاله</a>
 
                         <div class="clearfix"></div>
-                    </div>
+                    </article>
                 </div>
             {% endfor %}
 
