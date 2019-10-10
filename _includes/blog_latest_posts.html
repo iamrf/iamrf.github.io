@@ -20,7 +20,7 @@
 
                 {% for post in site.posts | limit: 3%}
                     <div id="blog-latest-post-body" class="col s12 m12 l4">
-                        <article id="{{ post.title }}" class="card">
+                        <article id="{{ post.title }}" class="card intro-article-card">
                             <span class="card-title">
                                 <a href="{{ post.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp; {{ post.title }}</a>
                             </span>

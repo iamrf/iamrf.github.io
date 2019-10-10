@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row center">
                     <h4>
-                            <i class="fa fa-list-alt"></i>&nbsp;
+                            <i class="fa fa-suitcase"></i>&nbsp;
                             نمونه کار
                     </h4>
                 </div>
@@ -21,24 +21,25 @@
             {% assign portfolio = site.portfolio | reverse %}
             {% for portfo in portfolio | limit:4 %}
                 <div class="col s12 m12 l6">
-                    <article id="{{ portfo.title }}" class="card">
-                        <span class="card-title"><a href="{{ portfo.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ portfo.title }}</a></span>
-                        {% if portfo.thumbnail %}
-                        <picture>
-                            <img src="{{ site.url }}/{{ portfo.thumbnail }}" alt="{{ portfo.title }}" class="img-fit">
-                        </picture>
-                        {% endif %}
-                        <div class="card-content"><p>{{ portfo.excerpt }}</p></div>
-                        
-                        <a href="{{ portfo.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مقاله</a>
+                    <a href="{{ portfo.url }}" class="grey-text text-darken-4">
+                        <article id="{{ portfo.title }}" class="card intro-portfolio-card">
+                            {% if portfo.thumbnail %}
+                            <picture>
+                                <img src="{{ site.url }}/{{ portfo.thumbnail }}" alt="{{ portfo.title }}" class="img-fit">
+                            </picture>
+                            {% endif %}
+                            <span class="card-title">{{ portfo.title }}</span>
 
-                        <div class="clearfix"></div>
-                    </article>
+                            <div class="card-content"><p>{{ portfo.excerpt }}</p></div>
+                            
+                            <div class="clearfix"></div>
+                        </article>
+                    </a>
                 </div>
             {% endfor %}
 
             <div id="" class="col s12 center link-to-collections">
-                <a href="{{ site.url }}/portfolio" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      رفتن به صفحه نمونه کارها      </a>
+                <a href="{{ site.url }}/portfolio" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-suitcase"></i>&nbsp;      رفتن به صفحه نمونه کارها      </a>
             </div>
 
         </div>

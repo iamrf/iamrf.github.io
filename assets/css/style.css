@@ -171,21 +171,36 @@ footer.page-footer {
   margin-top: 5%;
 }
 
-.card{
+.intro-article-card{
   padding: 1rem 0;
   margin: 4rem 0 0;
   border-top-left-radius: .7rem;
   border-top-right-radius: .7rem;
 }
 
-.card img{
+.intro-article-card img{
   margin-top: .8rem;
 }
 
-.card-title{
+.intro-article-card .card-title{
   padding: 1rem;
 }
 
-.card-content p{
+.intro-article-card .card-content p{
   text-align: justify;
+}
+
+.intro-portfolio-card{
+  margin: 4rem 0 0;
+  border-top-left-radius: .7rem;
+  border-top-right-radius: .7rem;
+}
+
+.intro-portfolio-card .card-title{
+  padding: 1rem;
+}
+
+.intro-portfolio-card img{
+  border-top-left-radius: .7rem;
+  border-top-right-radius: .7rem;
 }
