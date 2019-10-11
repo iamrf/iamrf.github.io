@@ -171,8 +171,17 @@ footer.page-footer {
 }
 
 #about-box{
-  text-align: justify;
   padding: 7rem 1rem 8rem;
+}
+
+#about-box p{
+  text-align: justify;
+}
+
+#about-box span{
+  display: block;
+  margin: auto;
+  text-align: center !important;
 }
 
 .link-to-collections a{
