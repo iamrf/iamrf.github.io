@@ -272,9 +272,5 @@ footer.page-footer {
 }
 
 .btn-floating.halfway-fab {
-  right: 24px !important;
-}
-
-.btn-floating.halfway-fab:hover{
-  right: 27px !important;
+  right: 0rem !important;
 }
