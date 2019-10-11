@@ -235,3 +235,16 @@ footer.page-footer {
   height: 100%;
   overflow: hidden;
 }
+
+#nav-mobile a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  overflow: hidden;
+}
+
+#nav-mobile a:hover{
+  color: rgb(160, 0, 0) !important;
+  transition: .3s;
+}
