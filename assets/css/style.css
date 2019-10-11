@@ -76,6 +76,10 @@ img{
   direction: rtl !important;
 }
 
+.align-justify{
+  text-align: justify !important;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
