@@ -21,7 +21,16 @@ layout: default
 
             {%- if page.author -%}
               <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><i class="fa fa-user"></i> &nbsp; {{ page.author }}</span></span>
-            {%- endif -%}</p>
+            {%- endif -%}<br>
+
+            <reading-time>
+              <i class="fa fa-clock-o"></i> &nbsp; زمان مطالعه : 
+              <span class="red-text text-darken-3">
+                {% include reading-time.html %}
+              </span>
+            </reading-time>
+
+          </p>
         </header>
 
         <div class="post-content e-content" itemprop="articleBody">
