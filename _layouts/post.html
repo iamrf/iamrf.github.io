@@ -20,7 +20,9 @@ layout: default
             </time><br>
 
             {%- if page.author -%}
-              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><i class="fa fa-user"></i> &nbsp; {{ page.author }}</span></span>
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><i class="fa fa-pencil"></i> &nbsp; {{ page.author }}</span></span>
+            {% else %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><i class="fa fa-pencil"></i> &nbsp; {{ site.blog_author }}</span></span>
             {%- endif -%}<br>
 
             <reading-time>
