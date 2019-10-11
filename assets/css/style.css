@@ -214,7 +214,7 @@ footer.page-footer {
 }
 
 .under-navbar{
-  margin: 6rem 0 0;
+  margin: 5rem 0 0;
 }
 
 .post{
@@ -227,6 +227,10 @@ footer.page-footer {
 
 #breadcrumbs{
   direction: ltr !important;
+}
+
+#breadcrumbs a:hover{
+  text-decoration: underline;
 }
 
 .post img{
