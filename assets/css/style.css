@@ -265,3 +265,16 @@ footer.page-footer {
   color: rgb(160, 0, 0) !important;
   transition: .3s;
 }
+
+.nav-wrapper a{
+  text-align: right !important;
+  float: right !important;
+}
+
+.btn-floating.halfway-fab {
+  right: 24px !important;
+}
+
+.btn-floating.halfway-fab:hover{
+  right: 27px !important;
+}
