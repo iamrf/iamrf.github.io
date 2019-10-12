@@ -25,9 +25,11 @@ description: >- # this means to ignore newlines until "baseurl:"
         نوشته های من
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iamrf.net" # the base hostname & protocol for your site, e.g. http://example.com
+project_url: "https://github.com/iamrf/iamrf.github.io"
+
 twitter_username: areffallah
 github_username:  iamrf
-instagram_username: arefallah
+instagram_username: rf.fa
 linkedin_username: aref-fallah
 
 #Others
@@ -93,8 +95,10 @@ collections:
 
 #   _includes/follow-buttons.html variables
 facebook_url: https:/fb.com/rf.fallah
-twitter_url: 
-linkedin_url: 
+twitter_url: https://t.co/areffallah
+linkedin_url: https://ir.linkedin.com/in/aref-fallah
 googleplus_url:
 pinterest_url:
 instagram_url: https://instagram.com/rf.fa
+github_url: https://github.com/iamrf
+stackoverflow_url: https://stackoverflow.com/users/9784160/iamrf
