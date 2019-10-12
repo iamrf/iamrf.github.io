@@ -19,7 +19,7 @@ layout: default
 
         <div class="row">
 
-            {% for post in site.posts %}
+            {% for post in paginator.posts %}
             <article id="{{ post.title | escape }}" class="card">
                 <div class="card-title">
                     <a href="{{ post.url }}" class="grey-text text-darken-3">{{ post.title }}</a>                    
@@ -57,6 +57,43 @@ layout: default
             {% endfor %}
 
         </div>
+
+        <div class="clearfix"></div>
+        
+        <div class="row">
+            <div id="paginate-box" class="center-align">
+
+                <!-- pagination -->
+                {% if paginator.total_pages > 1 %}
+                    <ul class="pagination">
+                        {% if paginator.previous_page %}
+                            <li class="waves-effect"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-right"></i></a></li>                            
+                        {% else %}
+                            <li class="disabled"><a href="#!"><i class="fa fa-chevron-right"></i></a></li>
+                        {% endif %}
+
+                        {% for page in (1..paginator.total_pages) %}
+                            {% if page == paginator.page %}
+                                <li class="active"><a href="#!">{{ page }}</a></li>
+                            {% elsif page == 1 %}
+                                <li class="waves-effect"><a href="{{ site.url }}/blog/">{{ page }}</a></li>
+                            {% else %}
+                                <li class="waves-effect"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if paginator.next_page %}
+                            <li class="waves-effect"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-chevron-left"></i></a></li>
+                        {% else %}
+                            <li class="disabled"><a href="#!"><i class="fa fa-chevron-left"></i></a></li>
+                        {% endif %}
+                    </ul>
+                {% endif %}
+
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
 
     </div>
 </section>

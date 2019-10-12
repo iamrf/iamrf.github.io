@@ -332,3 +332,7 @@ footer.page-footer {
   background: #eee;
   color: #333 !important;
 }
+
+#paginate-box{
+  margin: 0 0 1rem;
+}

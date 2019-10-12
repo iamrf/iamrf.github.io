@@ -42,7 +42,7 @@ kramdown:
     syntax_highlighter: rouge
 
 # Build settings
-theme: minima
+#- theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -69,6 +69,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+#   Paginator settings
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 #   Permalinks allow us to structure the directories of our source code different 
 #   from the directories in our output.
@@ -91,7 +94,7 @@ collections:
     output: true
     permalink: /:collection/:title/
 
-  
+
 
 #   _includes/follow-buttons.html variables
 facebook_url: https:/fb.com/rf.fallah
