@@ -87,9 +87,6 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:title/
-  articles:
-    output: true
-    permalink: /:collection/:title/
   travels:
     output: true
     permalink: /:collection/:title/

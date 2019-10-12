@@ -336,3 +336,13 @@ footer.page-footer {
 #paginate-box{
   margin: 0 0 1rem;
 }
+
+#blog-latest-post .card .btn{
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+#intro-travel-body .card .btn{
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
