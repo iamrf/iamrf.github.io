@@ -275,38 +275,38 @@ footer.page-footer {
   right: 0rem !important;
 }
 
-#blog-index .card{
+.index-page .card{
   margin: .5rem 0 2rem;
 }
 
-#blog-index .card-title{
+.index-page .card-title{
   padding: 1rem 1rem 0;
 }
 
-#blog-index .card-content p{
+.index-page .card-content p{
   text-align: justify
 }
 
-#blog-index img{
+.index-page img{
   border-radius: .5rem;
 }
 
-#blog-index .post-more-btn{
+.index-page .post-more-btn{
   position: absolute;
   bottom: 1rem;
   left: 0px;
 }
 
-#blog-index .btn{
+.index-page .btn{
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 }
 
-#blog-index h1{
+.index-page h1{
   font-size: 2rem;
 }
 
-#blog-index header{
+.index-page header{
   padding: 1rem 0;
   margin: .5rem 0 1rem;
 }

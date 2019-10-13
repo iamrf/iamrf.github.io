@@ -1,0 +1,68 @@
+---
+layout: default
+permalink: '/travels/'
+---
+<section id="travels-index" class="under-navbar index-page">
+    <div class="container">
+
+        {% include breadcrumbs.html %}
+
+        <div class="clearfix"></div>
+
+        <header class="grey darken-3 grey-text text-lighten-4 z-depth-1">
+            <h1 class="center-align">
+                <i class="fa fa-tree"></i> &nbsp;
+                سفرنامه
+            </h1>
+        </header>
+
+        <div class="clearfix"></div>        
+
+        <div class="row">
+
+            {% assign travels = site.travels | reverse %}
+            {% for page in travels %}
+            <article id="{{ page.title | escape }}" class="card">
+                <div class="card-title">
+                    <a href="{{ page.url }}" class="grey-text text-darken-3">{{ page.title }}</a>                    
+                </div>
+                <div class="card-content">
+
+                    {% if page.thumbnail %}
+                        <div class="row">
+                            <div class="col l4">
+                                <picture>
+                                    <img src="{{ site.url }}/{{ page.thumbnail }}" alt="{{ page.title }}" class="img-fit">
+                                </picture>
+                            </div>
+                            <div class="col l8">
+                                <p>
+                                    {{ page.excerpt }}
+                                </p>
+                            </div>
+                        </div>
+                        
+                    {% else %}
+                        <p>
+                            {{ page.excerpt }}
+                        </p>
+                    {% endif %}
+
+                    <div class="clearfix"></div>
+
+                    <br><a href="{{ page.url }}" class="btn left grey darken-3 post-more-btn">ادامه مطلب</a>
+
+                    <div class="clearfix"></div>
+                    
+                </div>
+            </article>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
+
+<div class="clearfix"></div>
+
+{% include footer.html %}
