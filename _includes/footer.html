@@ -1,4 +1,4 @@
-<footer class="page-footer grey darken-3 grey-text text-lighten-4 z-depth-1">
+<footer id="main-footer" class="page-footer grey darken-3 grey-text text-lighten-4 z-depth-1">
     <div class="container">
         <div class="row">
             {% include social_icons_bar.html %}
@@ -8,7 +8,11 @@
             <div class="col l6 s12">
                 <h5 class="center">پانویس</h5>
                 <p class="align-justify">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    برای تماس با من میتوانید از طریق صفحه ی
+                    <a href="{{ site.url }}/contact/" class="grey-text text-lighten-4">
+                    "تماس با من"
+                    </a>
+                    و یا از طریق پست الکترونیک و تماس تلفنی اقدام کنید.
                 </p>
 
             </div>
@@ -23,15 +27,12 @@
             
                 </ul>
             </div>
-            <div class="col l3 s12 footer-links">
-                <h5 class="center">عنوان</h5>
-                <ul>
-                <li><a class="grey-text text-lighten-4" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-4" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-4" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-4" href="#!">Link 4</a></li>
-                </ul>
+            <div class="col l3 s12">
+                <picture class="hide-on-med-and-down">
+                    <img src="{{ site.url }}/assets/img/rf-logo.png" alt="{{ site.title }}">
+                </picture>
             </div>
+
         </div>
 
     </div>

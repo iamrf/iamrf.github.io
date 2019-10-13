@@ -351,3 +351,7 @@ footer.page-footer {
   font-size: 1.5rem !important;
   line-height: 2;
 }
+
+#main-footer img{
+  width: 50%;
+}
