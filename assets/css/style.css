@@ -355,3 +355,15 @@ footer.page-footer {
 #main-footer img{
   width: 50%;
 }
+
+#lunrsearchresults p{
+  padding: 1rem 1rem 0;
+}
+
+#lunrsearchresults li{
+  padding: 1rem;
+}
+
+#lunrsearchresults li:hover{
+  background-color: rgb(224, 224, 224);
+}
