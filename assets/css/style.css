@@ -346,3 +346,8 @@ footer.page-footer {
   border-bottom-left-radius: 0px !important;
   border-top-left-radius: 0px !important;
 }
+
+#about-box p{
+  font-size: 1.5rem !important;
+  line-height: 2;
+}
