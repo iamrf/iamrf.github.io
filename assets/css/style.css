@@ -311,11 +311,11 @@ footer.page-footer {
   margin: .5rem 0 1rem;
 }
 
-#footer-social-icons{
+.social-icons-bar{
   display: block;
   padding: 1rem 0;
 }
-#footer-social-icons a{
+.social-icons-bar a{
   margin: 1rem !important;
 }
 
@@ -366,4 +366,8 @@ footer.page-footer {
 
 #lunrsearchresults li:hover{
   background-color: rgb(224, 224, 224);
+}
+
+#contact-page .spacer{
+  margin: 2rem 0;
 }
