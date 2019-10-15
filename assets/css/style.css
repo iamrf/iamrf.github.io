@@ -371,3 +371,11 @@ footer.page-footer {
 #contact-page .spacer{
   margin: 2rem 0;
 }
+
+#about-page .spacer{
+  margin: 2rem 0;
+}
+
+.about-page-pic{
+  width: 50% !important;
+}
