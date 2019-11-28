@@ -13,6 +13,15 @@ layout: default
         <header class="">
           <h1 class="" itemprop="name headline">{{ page.title | escape }}</h1>
           <p class="post-meta">
+            <categories>
+              <i class="fa fa-folder-o"></i> &nbsp; دسته بندی : 
+              <span>
+                {% for cat in page.categories %}
+                {{ cat }}
+                {% endfor %}
+              </span>
+            </categories><br>
+            
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
               <i class="fa fa-calendar"></i> &nbsp;
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -26,11 +35,11 @@ layout: default
             {%- endif -%}<br>
 
             <reading-time>
-              <i class="fa fa-clock-o"></i> &nbsp; زمان مطالعه : 
+              <i class="fa fa-hourglass-half"></i> &nbsp; زمان مطالعه : 
               <span class="red-text text-darken-3">
                 {% include reading-time.html %}
               </span>
-            </reading-time>
+            </reading-time><br>
 
           </p>
         </header>
