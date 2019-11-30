@@ -41,6 +41,10 @@ pre{
   overflow-x: auto;
 }
 
+blockquote{
+  padding: 1.2rem 1rem;
+}
+
 .navbar-fixed{
   position: absolute !important;
   top: 0;
