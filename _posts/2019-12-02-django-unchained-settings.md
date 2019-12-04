@@ -39,12 +39,12 @@ ALLOWED_HOSTS = ['www.example.com']     # دامنه شما
 
 <br>
 <blockquote class="grey lighten-3">
-<i class="fa fa-check-circle"></i>&nbsp; 
+<i class="fa fa-check"></i>&nbsp; <b>
 در همه حال DRY را رعایت کنید !!!
-<br>
+</b><br>
 اگر تجربه کار با جنگو را داشته باشید حد اقل یک بار کلمه DRY را شنیدید. اگر هم نه الان بهتون میگم.
 </blockquote>
-<br>
+<br><br>
 <h5>DRY چیست ؟  </h5>
 DRY مخفف عبارت Don't Repeat Yourself 
 است یعنی <b> کار تکراری نکن </b>. DRY بهمون میگه تا جایی که ممکنه از اختراع دوباره چرخ اجتناب کنید.
@@ -63,7 +63,7 @@ DRY مخفف عبارت Don't Repeat Yourself
 <br>
 فلسفه یونیکس مجموعه‌ای از هنجارهای فرهنگی و رویکردهای فلسفی برای توسعه نرم‌افزارهای کوچک اما تواناست که بر اساس تجربیات توسعه‌دهندگان برجسته سیستم‌عامل یونیکس شکل گرفته‌است.
 <b>
-فلسفه یونیکس بر روی ساختاری کوچک، ساده، واضح، پیمانه‌ای و قابل گسترش تأکید دارد
+فلسفه یونیکس بر ساختاری کوچک، ساده، واضح، پیمانه‌ای و قابل گسترش تأکید دارد
 </b>
  که به غیر از نویسندگان اصلی و اولیه کد، توسعه‌دهندگان دیگر هم بتوانند آن را به سادگی نگه‌داری کنند و برای اهداف مختلف از آن استفاده کنند. 
 <br><br>
@@ -88,7 +88,7 @@ Write programs to handle text streams, because that is a universal interface
 </b>
 </blockquote>
 
-<br>
+<br><br>
 <h5>مسیر پایتون یا PYTHONPATH چیست ؟ </h5>
 پایتون در مسیر های مشخص و از پیش تعیین شده ای به دنبال ماژول ها و بسته های نرم افزاری خود جست و جو میکند . از این رو PYTHONPATH
 یک متغیر محلی است که به وسیله آن میتوانیم دایرکتوری های بیشتری به این مسیر ها اضافه کنیم .
@@ -99,7 +99,7 @@ export PYTHONPATH=${PYTHONPATH}:${HOME}/py_modules
 
 در مثال بالا ، دایرکتوری <i>‍py_modules</i> در <i>Home</i> را به مسیر پایتون خود اضافه کردیم .
 
-<br>
+<br><br>
 <h5> مشخص کردن تنظیمات </h5>
 زمانی که از جنگو استفاده میکنیم باید مشخص کنیم از چه تنظیماتی استفاده میکنیم . این کار را با متغیرِ محلیِ <b>DJANGO_SETTINGS_MODULE</b> انجام میدهیم .
 
@@ -152,13 +152,13 @@ WSGI کوتاه شده ی عبارت Web Server Gateway Interface به معنی
 
 [مستندات mod_wsgi جنگو][django-wsgi]
 
-<br>
+<br><br>
 <h5>ریشه و نحوه کار تنظیمات پیکربندی در پروژه جنگو</h5>
 در فایل تنظیمات اولیه همه متغیر هایی که برای پیکر بندی اولیه نیاز هست قرار دارن و جدا از اونا ما میتونیم تنظیمات دیگری رو هم اضافه کنیم که میشه گفت همشون متغیر های پایتونی اند. هر متغیر، شامل یک مقدار پیشفرض مشخصی است که این پیشفرض ها در ماژولی در مسیر <i>django/conf/global_settings.py</i> تعیین شده اند.
 
 تنظیمات پیکربندی با ران شدن سرور، کامپایل میشن و برای اعمال تغییرات، سرور باید ری استارت شه پس نباید در حالت اجرا تنظیمات را تغییر بدیم (بهتره در محیط توسعه تغییرات را اعمال کنیم)
 
-<br>
+<br><br>
 <h5>الگوریتم جنگو برای کامپایل تنظیمات پیکربندی</h5>
 جنگو کامپایل تنظیمات پیکربندی را به ترتیب زیر انجام میده :
 <blockquote class="grey lighten-3">
@@ -167,7 +167,7 @@ WSGI کوتاه شده ی عبارت Web Server Gateway Interface به معنی
 2 - بارگزاری تنظیمات پیکربندی از ماژول <i>settings.py</i> و جایگزین کردن تنظیمات <i>settings.py</i> به جای تنظیماتی که در مرحله قبل توسط <i>global_settings.py</i> بارگزاری شدند.
 </blockquote>
 
-<br>
+<br><br>
 <h5>مشاهده diff تنظیمات</h5>
 برای مشاهده تنظیماتی که نسبت به تنظیمات پیشفرض تغییر کردن میتونیم از دستور ```python manage.py diffsettings``` استفاده کنیم.
 
@@ -201,8 +201,9 @@ ModuleNotFoundError: No module named 'django.conf.settings'
  <i>global_settings</i> و <i>settings</i>
   دسترسی داشته باشیم .
 
-<br>
+<br><br>
 <h5>تغییر تنظیمات پیکربندی در زمان اجرا</h5>
+
 هرگز نباید تنظیمات پیکربندی را در زمان اجرا و در سایر کدهای پایتونی تغییر بدیم.مثلا تغییر تنظیمات پیکربندی از طریق <b>view</b> ها کار درستی نیست! چرا؟ دلیلشو قبلا گفتیم و الان میدونیم که اینکار چقدر میتونه گرون تموم شه برامون.
 
 {% highlight python %}
@@ -213,14 +214,14 @@ settings.DEBUG = True   # هرگز این کارو نکنید!!!
 
 تکرار میکنم تنظیمات پیکربندی را فقط باید از طریق <b>settings.py</b> ویرایش کنیم.
 
-<br>
+<br><br>
 <h5>متغیر های موجود برای تنظیمات</h5>
 اسناد رسمیِ جنگو، در 
 [این صفحه][django-ref-settings]
 به بررسی کامل همه متغیر های موجود برای تنظیمات و مقدار پیش فرض آنها پرداخته است.
 البته امیدوارم در آینده نزدیک در یکی از قسمت های همین سری آموزشی بتونیم این صفحه را به طور کامل بررسی کنیم .
 
-<br>
+<br><br>
 <h5> کنترل نسخه </h5>
 [کنترل نسخه (Version Control System) چیست ؟][vcs-wiki]
 
@@ -233,17 +234,16 @@ settings.DEBUG = True   # هرگز این کارو نکنید!!!
 
 [کتاب آموزش گیت - Pro Git book - نسخه فارسی][git-tutorial]
 
-<br>
+<br><br>
 <h5> امنیت </h5>
 خب رسیدیم به قسمت جذاب ماجرا . امنیت‌ !!!
 
 تا اینجا با چند نکته برای بالا بردن امنیت برنامه آشنا شدیم ، حالا باید کمی سخت گیرانه تر برخورد کنیم .
 
-<br>
-<i class="fa fa-arrow-left"></i> &nbsp; 
-<b>
+<br><br>
+<h5>
 از تنظیمات محلی (Local) بدون ردیابی نسخه خودداری کنید 
-</b>
+</h5>
 
 ما به عنوان توسعه دهنده ی برنامه ، به تنظیمات مخصوص خودمون در محیط توسعه نیاز داریم . تنظیماتی مانند فعال سازی ابزار دیباگ که در محیط توسعه به آن نیاز داریم اما در وضعیت Staging و یا بهره برداری باید آن را غیر فعال کنیم 
 ( و یا اصلا در این وضعیت آن ها را نصب نکنیم)
@@ -288,12 +288,11 @@ SECRET_KEY در واقع یک کلید خصوصی (Private Key) است که در
  که همشون از یک ماژول اصلی که توسط ابزار کنترل نسخه ردیابی میشود ، ارث بری داشته باشند .
 همچنین باید مطمئن شویم که رازهایمان ( کلید ها ، توکن ها ، رمز عبور ها و ... ) بصورت راز باقی بمانند .
 
-<br>
-<i class="fa fa-arrow-left"></i> &nbsp;
-<b>
+<br><br>
+<h5>
 تنظیمات پیکربندی چندگانه
-</b>
-<br>
+</h5>
+
 به جای ماژول <i> settings.py </i> میتوانیم یک دایرکتوری <i> settings </i> داشته باشیم که همه ماژول های تنظیمات را درون خود نگه میدارد . به مثال زیر دقت کنید :
 
 {% highlight shell %}
@@ -378,8 +377,9 @@ python manage.py runserver --settings=mysite.settings.staging
 {% endhighlight %}
 
 <br><br>
-<i class="fa fa-arrow-left"></i> &nbsp;
-<b> یک مثال برای درک بهتر تنظیمات چندگانه </b>
+<h5>
+ یک مثال برای درک بهتر تنظیمات چندگانه 
+</h5>
 
 خب همانطور که دیدیم ، ما به یک ماژول تنظیمات پیکربندی محلی نیاز داریم تا تنظیمات فاز توسعه خودمان را در آن تعریف کنیم . تنظیماتی مانند انتخاب بکند ایمیل ، تنظیمات دیتابیسِ مرحله توسعه ،  تنظیمات حالت ``` DEBUG ``` و همه تنظیماتی که در محیط توسعه برنامه به آن نیاز داریم . نمونه این تنظیمات میتواند چیزی شبیه به تکه کد زیر باشد :
 
@@ -414,11 +414,10 @@ python manage.py runserver --settings=mysite.settings.local
 به هیچ عنوان از عبارات شرطی ، حلقه یا عبارات منطقی در ماژول تنظیمات پیکربندی استفاده نکنید . تنظیمات باید در ساده ترین شکل ممکن باشند .
 </blockquote>
 
-<br>
-<i class="fa fa-arrow-left"></i> &nbsp;
-<b>
+<br><br>
+<h5>
 تنظیمات پیکربندی محلیِ چندگانه
-</b>
+</h5>
 
 گاهی اوقات ما بر روی پروژه های بزرگی کار میکنیم که در این وضعیت ، توسعه دهندگان مختلف به تنظیمات پیکربندی محلی مختلف ( تنظیمات مخصوص به خود ) نیاز دارند و اشتراک یک ماژول <i>dev.py</i> راه حل مناسبی نخواهد بود .
 
@@ -450,11 +449,10 @@ settings/
     production.py
 {% endhighlight %}
 
-<br>
-<i class="fa fa-arrow-left"></i> &nbsp;
-<b>
+<br><br>
+<h5>
 اطلاعات حساس و مهم را از کد دور نگه دارید
-</b>
+</h5>
 
 قبلا در مورد اهمیت مخفی کردن اطلاعات حساس از فایل های برنامه صحبت کردیم ، حالا وقتشه که کمی جدی تر با این قضیه رفتار کنیم .
 
@@ -497,11 +495,10 @@ settings/
 
 [توضیحات سایت ۱۲ فاکتور درباره ذخیره پیکربندی ها در متغیر محلی][12-factor-config]
 
-<br>
-<i class="fa fa-arrow-left"></i> &nbsp;
-<b>
+<br><br>
+<h5>
 استفاده از متغیر محلی برای ذخیره ی اطلاعات حساس
-</b>
+</h5>
 
 در سیستم های مک و یا خیلی از توزیع های گنو لینوکس که از بش ( Bash ) به عنوان شل ( Shell ) استفاده میکنند میتوانیم با افزودن کد زیر به آخر فایل پیکربندی 
 ```.bashrc``` یا ```.bash_profile``` و یا ```.profile```
@@ -532,11 +529,10 @@ import os
 SOME_SECRET_KEY = os.environ["SOME_SECRET_KEY"]
 {% endhighlight %}
 
-<br>
-<i class="fa fa-arrow-left"></i> &nbsp;
-<b>
+<br><br>
+<h5>
 کنترل استثنا ها
-</b>
+</h5>
 
 تا اینجا یاد گرفتیم که چطور باید اطلاعات حساس خود ( مثلا کلید خصوصی ) را در متغیر های محلی نگهداری کنیم ، اما اگر در قطعه کدی که تحت عنوان "نمونه استفاده از متغیر محلی در ماژول تنظیمات" دیدیم ، متغیر SOME_SECRET_KEY موجود نباشد چه اتفاقی خواهد افتاد ؟
 
@@ -561,6 +557,8 @@ def get_env_variable(var_name):
 {% endhighlight %}
 
 <blockquote class="grey lighten-3">
+<i class="fa fa-check"></i>&nbsp;
+<b>یک نکته مهم </b><br>
 در حالت عادی نباید هیچ ماژولی را از جنگو به داخل ماژول تنظیمات فراخوانی کرد اما <b>ImproperlyConfigured</b> یک استثنا است .
 </blockquote>
 
@@ -576,6 +574,142 @@ django.core.exceptions.ImproperlyConfigured:
 Set the SOME_SECRET_KEY environment variable.
 {% endhighlight %}
 
+<br><br>
+<h5>
+استفاده از فایل های غیر قابل اجرا برای ذخیره اطلاعات پیکربندی به جای متغیر محلی
+</h5>
+
+بزرگترین ایراد استفاده از متغیر های محلی ، این است که ممکن است همیشه جواب ندهد .این اتفاق معمولا در وب سرور های آپاچی ( Apache ) و گاهی اوقات هم برای سرورهای انجین-ایکس ( Nginx ) رخ می دهد .
+زمانی که به همچین مشکلی برخوردیم به جای بازگشت به ضد الگوی تنظیمات محلی ( Local settings anti-pattern ) ، پیشنهاد ما استفاده از فایل های غیر قابل اجرا بدون ردیابی توسط ابزار کنترل نسخه تحت عنوان الگوی فایل اطلاعات حساس ( Secrets file pattern ) است . حالا بیایید کمی بیشتر در این مورد بحث کنیم .
+
+برای پیاده سازی الگوی فایل اطلاعات حساس ، باید به ترتیب زیر عمل کنیم :
+
+− ساخت یک فایل حاوی تنظیمات پیکربندی تحت فرمت هایی مانند JSON , Config , YAML , XML و ...
+
+− اضافه کردن ابزار بارگزاری اطلاعات ( در مثال بعدی از JSON استفاده شده است ) برای مدیریرت منسجم و صریح اطلاعات
+
+− جلوگیری از ردیابی فایل ساخته شده توسط ابزار کنترل نسخه ( مثلا اضافه کردن نام فایل JSON ساخته شده به فایل ```.gitignore``` برای جلوگیری از ردیابی این فایل توسط گیت Git)
+
+
+به عنوان مثال ، برای این منظور میخواهیم از فایل JSON استفاده کنیم .
+
+برای این کار یک فایل با نام <i>secrets.json</i> میسازیم . پیشنهاد من این است که کد ها را در ساده ترین حالت ممکن بنویسیم تا با سادگی و سرعت بیشتری با آن کار کنیم :
+
+{% highlight json %}
+{
+"FILENAME": "secrets.json",
+"SECRET_KEY": "1c3-cr3am-15-yummy",
+"DATABASES_HOST": "127.0.0.1",
+"PORT": "5432",
+"DATABASE_PASSWORD": "OldGeorgie1993",
+}
+{% endhighlight %}
+
+خب حالا برای استفاده و استخراج اطلاعات از فایل <i>secrets.json</i> در ماژول <i>base.py</i> مانند مثال زیر عمل میکنیم :
+
+{% highlight python %}
+# settings/base.py
+
+import json
+# Normally you should not import ANYTHING from Django directly
+# into your settings, but ImproperlyConfigured is an exception.
+from django.core.exceptions import ImproperlyConfigured
+# JSON-based secrets module
+with open("secrets.json") as f:
+    secrets = json.loads(f.read())
+
+def get_secret(setting, secrets=secrets):
+    """Get the secret variable or return explicit exception."""
+    try:
+        return secrets[setting]
+    except KeyError:
+        error_msg = "Set the {0} environment variable".format(setting)
+        raise ImproperlyConfigured(error_msg)
+        SECRET_KEY = get_secret("SECRET_KEY")
+{% endhighlight %}
+
+بسیار عالی ! همانطور که میبینید موفق شدیم اطلاعات حساس را از یک فایل غیرقابل اجرای JSON به جای فایل های اجراشونده ( Executable ) و بدون ردیابی توسط کنترل نسخه ، فراخوانی کنیم .
+
+<br><br>
+<h5>
+استفاده از فایل های ملزومات چندگانه
+</h5>
+
+حالا میپردازیم به چگونگی نصب فایل های مورد نیاز سرور ها . قطعا بهترین راه این است که هر سرور ( Local , Staging , Production ) فقط فایل های مورد نیاز خود را نصب کند .
+
+برای استفاده از این الگو ، دایرکتوری ```requirements/``` را در دایرکتوری اصلی مخزن میسازیم ، سپس یک فایل با پسوند ```.txt``` متناظر با تنظیمات پیکربندی هر سرور ایجاد میکنیم . مثال :
+
+{% highlight shell %}
+requirements/
+    base.txt
+    local.txt
+    staging.txt
+    production.txt
+{% endhighlight %}
+
+در فایل <i>base.txt</i> نیازمندی های مشترک همه سرور ها را وارد میکنیم . برای مثال :
+
+{% highlight python %}
+Django==2.2.7
+psycopg2==2.8.4
+djangorestframework==3.10.0
+{% endhighlight %}
+
+همچنین فایل <i>local.txt</i> باید شامل نیازمندی های محیط توسعه محلی باشد . مانند :
+
+{% highlight python %}
+-r base.txt # includes the base.txt requirements file
+
+coverage==4.5.4
+django-debug-toolbar==2.1
+{% endhighlight %}
+
+همانطور که واضح است در مثال بالا میبینیم که با دستور ```-r base.txt``` در بالای فایل <i>local.txt</i> ، نیازمندی های مشترک را از فایل <i>base.txt</i> بارگزاری کرده و نیاز مندی های جدید را در خط های پایین تر وارد کردیم .
+
+نیازمندی های محیط بهره برداری باید نزدیک به سایر محیط ها باشد ، پس در اینجا یک فایل <i>production.txt</i> داریم که معمولا فقط نیازمندی های مشترک موجود در <i>base.txt</i> را بارگزاری میکند :
+
+{% highlight python %}
+-r base.txt # includes the base.txt requirements file
+{% endhighlight %}
+
+<br><br>
+<h5>
+نصب فایل های ملزومات چندگانه
+</h5>
+
+برای نصب فایل های مورد نیاز در محیط های پایتونی ، از PIP ( Python package manager ) استفاده میکنیم . برای مثال در محیط توسعه محلی :
+
+{% highlight shell %}
+$ pip install -r requirements/local.txt
+{% endhighlight %}
+
+و یا در محیط بهره برداری ( Production ) :
+
+{% highlight shell %}
+$ pip install -r requirements/production.txt
+{% endhighlight %}
+
+<br><br>
+<h5>
+خلاصه ی بحث
+</h5>
+
+به یاد داشته باشید :
+
+همه ی فایل ها به جز اطلاعات مهم و حساس پیکربندی باید توسط ابزار کنترل نسخه ردیابی شوند .
+
+همه پروژه هایی که به منظور استفاده تجاری و بهره برداری در لایو سرور طراحی میشوند باید تنظیمات و لیست ملزومات ( Settings and Requirements ) چندگانه داشته باشند .
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -588,6 +722,8 @@ Set the SOME_SECRET_KEY environment variable.
 <br>
 
 [Django documentation][django-docs]
+
+[Two Scoops of Django - Daniel Roy Greenfeld Audrey Roy Greenfeld][2scoops-django]
 
 [James Bennett volunteers as both a Django core developer and as its release manager.][james-bennett-site]
 
@@ -615,3 +751,4 @@ Set the SOME_SECRET_KEY environment variable.
 
 [django-docs]: https://docs.djangoproject.com/en/2.2/
 [james-bennett-site]: https://www.b-list.org/
+[2scoops-django]: http://2scoops.co/
