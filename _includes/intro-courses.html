@@ -1,0 +1,47 @@
+{% if site.courses.size > 0 %}
+<section id="courses">
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <i class="fa fa-book fa-4x"></i><br>
+                    <h4>
+                            درس ها
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="{{ site.url }}/assets/img/portfolio-bg.jpg" alt="سفرنامه"></div>
+    </div>
+
+    <div id="intro-course-body" class="container">
+        <div class="row">
+            
+            {% assign courses = site.courses | reverse %}
+            {% for course in courses | limit:3 %}
+                <div class="col s12 m12 l4">
+                    <article id="{{ course.title }}" class="card intro-article-card">
+                        <span class="card-title"><a href="{{ course.url }}" class="grey-text text-darken-3"><i class="fa fa-angle-left"></i>&nbsp;   {{ course.title }}</a></span>
+                        {% if course.thumbnail %}
+                        <picture>
+                            <img src="{{ site.url }}/{{ course.thumbnail }}" alt="{{ course.title }}" class="img-fit">
+                        </picture>
+                        {% endif %}
+                        <div class="card-content"><p>{{ course.excerpt }}</p></div>
+                        
+                        <a href="{{ course.url }}" class="left btn grey darken-3 waves-effect waves-light">ادامه مطلب</a>
+
+                        <div class="clearfix"></div>
+                    </article>
+                </div>
+            {% endfor %}
+
+            <div id="" class="col s12 center link-to-collections">
+                <a href="{{ site.url }}/courses" class="btn btn-large red darken-4 red-text text-lighten-4 waves-effect"><i class="fa fa-file-text-o"></i>&nbsp;      مشاهده همه درس ها      </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endif %}

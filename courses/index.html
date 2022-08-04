@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 'سفرنامه ها'
-permalink: '/travels/'
+title: 'درس ها'
+permalink: '/courses/'
 ---
 <section id="travels-index" class="under-navbar index-page">
     <div class="container">
@@ -12,8 +12,8 @@ permalink: '/travels/'
 
         <header class="grey darken-3 grey-text text-lighten-4 z-depth-1">
             <h1 class="center-align">
-                <i class="fa fa-tree"></i> &nbsp;
-                سفرنامه
+                <i class="fa fa-book"></i> &nbsp;
+                درس ها
             </h1>
         </header>
 
@@ -21,8 +21,8 @@ permalink: '/travels/'
 
         <div class="row">
 
-            {% assign travels = site.travels | reverse %}
-            {% for page in travels %}
+            {% assign courses = site.courses | reverse %}
+            {% for page in courses %}
             <article id="{{ page.title | escape }}" class="card">
                 <div class="card-title">
                     <a href="{{ page.url }}" class="grey-text text-darken-3">{{ page.title }}</a>                    
