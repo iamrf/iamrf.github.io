@@ -3,12 +3,10 @@ layout: post
 title:  "آشنایی با زبان نشانه گذاری HTML"
 date:   2022-08-03 17:30:00 +0400
 categories: ['آموزش طراحی سایت', ]
-tags: ['Front End', 'HTML', 'فرانت اند', 'طراحی سایت',]
+tags: ['آموزش طراحی سایت', 'Front End', 'HTML', 'فرانت اند', 'طراحی سایت',]
 thumbnail: 'files/img/html-poster-1.jpg'
 published: true
 ---
-<h5>
-برنامه نویسی وب </h5>
 اگر با تعریف برنامه نویسی آشنا باشید می‌دانید که یک برنامه نویس با استفاده از برخی دستورات (کدها) به کامپیوترها دستور می‌دهد تا یک عملیات (منطقی) به انجام برسد.
 برنامه نویس وب نیز دقیقا همین کار را انجام می‌دهد با این تفاوت که این برنامه نویس وب، برنامه هایی می نویسد که توسط وب سرور اجرا می شود یا به زبان ساده صفحات وبی را می‌نویسد که توسط مرورگر وب به اجرا در میاید.
 
@@ -184,7 +182,36 @@ em یک المان Inline است، پس همانطور که در خروجی کد
 
 <br>
 <h5>
-المان های خالی (Empty elements)</h5>
+المان های خالی (Empty elements / Void elements)</h5>
+
+همه ی المان های HTML از قاعده ی (تگ آغازین، محتوا، تگ پایانی) پیروی نمیکنند. بعضی از المان ها تنها از یک تگ تشکیل شده اند که معمولا برای وارد کردن فایل، عکس و ... در سند ما به کار می روند.
+
+برای مثال ، المان img برای وارد کردن تصویر به صفحه استفاده می شود:
+
+{% highlight html %}
+<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+{% endhighlight html %}
+
+<blockquote class="grey lighten-3">
+در کد بالا از ویژگی src برای آدرس دهی فایل تصویر استفاده شد.
+</blockquote>
+
+<blockquote class="grey lighten-3">
+<i class="fa fa-check"></i>&nbsp; <b>
+نکته :
+</b>
+در HTML نیازی نیست که در پایان تگ المان های خالی، علامت / قرار دهیم. برای مثال :
+{% highlight html %}
+<img src="images/cat.jpg" alt="cat" />
+{% endhighlight html %}
+هرچند که استفاده از / در پایان تگ موردی ندارد، اما زمانی که بخواهیم از سند HTML خود به عنوان یک سند XML استفاده کنیم، باید در پایان هر تگ از / اسفتاده نماییم.
+</blockquote>
+
+[XML چیست ؟][whatis-xml]
+
+<br>
+<h5>
+ویژگی ها (Attributes)</h5>
 
 
 
@@ -195,23 +222,33 @@ em یک المان Inline است، پس همانطور که در خروجی کد
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
 
 
 
@@ -411,3 +448,5 @@ HTML چطور کار می‌کند؟</h5>
 [block-level-mozilla]: https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
 
 [inline-elements-mozilla]: https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+
+[whatis-xml]: https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction
