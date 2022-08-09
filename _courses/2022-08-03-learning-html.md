@@ -218,7 +218,7 @@ em یک المان Inline است، پس همانطور که در خروجی کد
 {% highlight html %}
 <img src="images/cat.jpg" alt="cat" />
 {% endhighlight html %}
-هرچند که استفاده از / در پایان تگ موردی ندارد، اما زمانی که بخواهیم از سند HTML خود به عنوان یک سند XML استفاده کنیم، باید در پایان هر تگ از / اسفتاده نماییم.
+هرچند که استفاده از / در پایان تگ موردی ندارد، اما زمانی که بخواهیم از سند HTML خود به عنوان یک سند XML استفاده کنیم، باید در پایان هر تگ از / استفاده نماییم.
 </blockquote>
 
 [XML چیست ؟][whatis-xml]
@@ -491,6 +491,153 @@ DOCTYPE که مخفف Document Type است و در مقابل آن واژه ی H
 <i class="fa fa-chevron-left"></i> &nbsp; ساختار سند </h5> 
 
 
+<br>
+{% highlight html %}
+<h1> ... </h1>
+.
+.
+<h6> ... </h6>
+{% endhighlight html %}
+6 سایز مختلف برای نوشتن عنوان ها در حالی که h1 بزرگترین و h6 کوچکترین سایز است.
+
+<br>
+{% highlight html %}
+<div> ... </div>
+{% endhighlight html %}
+محتویات اسناد HTML معمولا در داخل بلاک ها نگهداری می شوند. تگ div مشخصا برای همین منظور است.
+
+<br>
+{% highlight html %}
+<span> ... </span>
+{% endhighlight html %}
+این تگ برای وارد کردن محتوا به صورت درون خطی ( Inline ) استفاده می شود، با استفاده از تگ span میتوان محتواهایی نظیر عکس، آیکن و ... را وارد محیط یک المان کرد بدون اینکه در المان تغییری ایجاد شود .
+
+<br>
+{% highlight html %}
+<p> ... </p>
+{% endhighlight html %}
+متن های ساده در این تگ قرار می گیرند .
+
+<br>
+{% highlight html %}
+<br>
+{% endhighlight html %}
+این تگ، یک سطر جدید می سازد . برای مثال در نوشتن متن ها زمانی که نیاز داریم به یک خط جدید برویم از این تگ استفاده می کنیم.
+
+<br>
+{% highlight html %}
+<hr>
+{% endhighlight html %}
+مانند تگ بالا، یک سطر جدید می سازد با این تفادت که یک خط افقی نیز ایجاد می کند.
+
+<br>
+<h5>مثال</h5>
+{% highlight html %}
+<div>
+  <h1>Top 5 Greatest Films</h1>
+  <p>These are considered the greatest <span>reel-icon</span> of all time </p>
+  <hr>
+  <h2>1. The Godfather</h2>
+  <p>This 1972 classic stars Marlon Brando and Al Pacino.</p>
+</div>
+{% endhighlight html %}
+
+<hr>
+
+<br>
+<h5>
+<i class="fa fa-chevron-left"></i> &nbsp; استایل دهی متن </h5> 
+
+<br>
+{% highlight html %}
+<strong> ... </strong>
+{% endhighlight html %}
+این تگ برای پررنگ کردن متن یا به اصطلاح Bold کردن متن استفاده می شود.
+
+<br>
+{% highlight html %}
+<b> ... </b>
+{% endhighlight html %}
+مانند تگ بالا، متن را پررنگ می کند .
+
+<br>
+{% highlight html %}
+<em> ... </em>
+{% endhighlight html %}
+برای متن های پر اهمیت به کار میرود و متن را به اصطلاح Italic میکند .
+
+<br>
+{% highlight html %}
+<i> ... </i>
+{% endhighlight html %}
+مانند تگ قبلی، متن را Italic می کند اما مانند تگ بالا روی آن تاکید نمی کند.
+
+<br>
+{% highlight html %}
+<cite> ... </cite>
+{% endhighlight html %}
+این تگ برای استناد کردن یک متن به نویسنده آن به کار می رود .
+
+<br>
+{% highlight html %}
+<blockquote> ... </blockquote>
+{% endhighlight html %}
+این تگ مخصوص وارد کردن نقل قول ها است و معمولا به همراه تگ cite به کار می رود.
+
+<br>
+{% highlight html %}
+<q> ... </q>
+{% endhighlight html %}
+مانند تگ بالا با این تفاوت که برای متن های کوچکتر استفاده می شود.
+
+<br>
+{% highlight html %}
+<abbr> ... </abbr>
+{% endhighlight html %}
+برای نشان دادن اختصارات به کار می رود.
+
+<br>
+{% highlight html %}
+<address> ... </address>
+{% endhighlight html %}
+برای وارد کردن اطلاعات تماس نویسنده استفاده می شود.
+
+<br>
+{% highlight html %}
+<code> ... </code>
+{% endhighlight html %}
+برای نمایش تکه کد در داخل پاراگراف استفاده می شود.
+
+<br>
+{% highlight html %}
+<sub> ... </sub>
+{% endhighlight html %}
+برای نوشتن توضیحات متن که با سایز کوچکتر و  پایین متن پاراگراف، قرار می گیرد.
+
+<br>
+{% highlight html %}
+<sup> ... </sup>
+{% endhighlight html %}
+برای نوشتن توضیحات متن که با سایز کوچکتر و  بالای متن پاراگراف، قرار می گیرد.
+
+<br>
+{% highlight html %}
+<p><strong>Bold text</strong> Regular text <em>some words in italics</em> regular text once again.</p>
+<blockquote>
+  Anyone who has never made a mistake has never
+  tried anything new.<cite>- Albert Einstein</cite>
+</blockquote>
+<pre>
+Some pre-formatted text
+</pre>
+<p>A code snippet: <code>some code</code></p>
+{% endhighlight html %}
+
+<hr>
+
+<!-- <br>
+<h5>
+<i class="fa fa-chevron-left"></i> &nbsp; پیوند ها (Links) </h5>  -->
 
 
 
@@ -499,6 +646,20 @@ DOCTYPE که مخفف Document Type است و در مقابل آن واژه ی H
 
 
 
+
+
+
+
+
+
+
+
+
+<hr>
+<br>
+<br>
+<br>
+[دانلود مرجع تگ های HTML][the-complete-HTML-cheat-sheet]
 
 
 
@@ -506,7 +667,7 @@ DOCTYPE که مخفف Document Type است و در مقابل آن واژه ی H
 <!-- static files -->
 [anatomy]: /files/img/anatomy-of-an-html-element.jpg
 [attributes-example]: /files/img/html-attributes-example-1.jpg
-
+[the-complete-HTML-cheat-sheet]: /files/doc/the-complete-HTML-cheat-sheet.pdf
 
 
 
