@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Aref Fallah",
+    "roles": ["Fullstack Developer", "React Expert", "Python Developer", "Linux Admin", "Problem Solver"],
+    "tagline": "I craft elegant, performant web applications — from pixel-perfect frontends to robust backends.",
+    "cta_work": "View My Work",
+    "cta_contact": "Get In Touch",
+    "scroll_hint": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Who I am",
+    "bio_1": "I'm a passionate Fullstack Web Developer with years of experience building scalable, user-centric web applications. I specialize in React on the frontend and Python/Django on the backend.",
+    "bio_2": "I love turning complex problems into clean, intuitive interfaces. Whether architecting a REST API or crafting pixel-perfect UIs, I bring the same attention to detail to every layer of the stack.",
+    "bio_3": "When I'm not coding, I'm exploring new technologies, contributing to open-source projects, or sharing knowledge through my blog and courses.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Delivered",
+      "clients": "Happy Clients",
+      "technologies": "Technologies"
+    },
+    "download_cv": "Download Resume"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "What I work with",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & DevOps"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "What I've built",
+    "view_all": "View All on GitHub",
+    "demo": "Live Demo",
+    "code": "Source Code"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My Journey"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "description": "Have a project in mind or want to discuss opportunities? I'd love to hear from you. I'm always open to interesting ideas and new collaborations.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "social": "Or find me on"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with React & Framer Motion"
+  }
+}

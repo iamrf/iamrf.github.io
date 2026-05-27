@@ -1,0 +1,45 @@
+export const skills = [
+  {
+    id: 'frontend',
+    titleKey: 'skills.categories.frontend',
+    items: [
+      { name: 'React', color: '#61dafb' },
+      { name: 'Next.js', color: '#e2e8f0' },
+      { name: 'TypeScript', color: '#3178c6' },
+      { name: 'JavaScript', color: '#f7df1e' },
+      { name: 'HTML5', color: '#e34f26' },
+      { name: 'CSS3', color: '#264de4' },
+      { name: 'Tailwind CSS', color: '#38bdf8' },
+      { name: 'Redux', color: '#764abc' },
+      { name: 'Framer Motion', color: '#bb4af7' },
+    ],
+  },
+  {
+    id: 'backend',
+    titleKey: 'skills.categories.backend',
+    items: [
+      { name: 'Python', color: '#3776ab' },
+      { name: 'Django', color: '#44b78b' },
+      { name: 'Django REST', color: '#ff1709' },
+      { name: 'Node.js', color: '#68a063' },
+      { name: 'Express', color: '#e2e8f0' },
+      { name: 'PostgreSQL', color: '#336791' },
+      { name: 'MySQL', color: '#4479a1' },
+      { name: 'Redis', color: '#dc382d' },
+    ],
+  },
+  {
+    id: 'tools',
+    titleKey: 'skills.categories.tools',
+    items: [
+      { name: 'Git', color: '#f05032' },
+      { name: 'Docker', color: '#2496ed' },
+      { name: 'Linux', color: '#fcc624' },
+      { name: 'GitHub Actions', color: '#2088ff' },
+      { name: 'Nginx', color: '#009900' },
+      { name: 'VS Code', color: '#007acc' },
+      { name: 'REST API', color: '#a78bfa' },
+      { name: 'Postman', color: '#ff6c37' },
+    ],
+  },
+]
