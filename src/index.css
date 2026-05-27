@@ -21,7 +21,11 @@
   }
 
   [dir='rtl'],
-  [dir='rtl'] body {
+  [dir='rtl'] body,
+  [dir='rtl'] input,
+  [dir='rtl'] textarea,
+  [dir='rtl'] button,
+  [dir='rtl'] select {
     font-family: var(--font-fa);
   }
 
