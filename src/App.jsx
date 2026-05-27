@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a18] text-slate-100">
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <About />
         <Skills />

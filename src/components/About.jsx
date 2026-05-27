@@ -5,9 +5,9 @@ import SectionHeader from './SectionHeader'
 import mePhoto from '../../assets/img/me.jpg'
 
 const STATS = [
-  { value: '5+', key: 'about.stats.experience' },
-  { value: '50+', key: 'about.stats.projects' },
-  { value: '20+', key: 'about.stats.clients' },
+  { value: '15+', key: 'about.stats.experience' },
+  { value: '100+', key: 'about.stats.projects' },
+  { value: '50+', key: 'about.stats.clients' },
   { value: '15+', key: 'about.stats.technologies' },
 ]
 
@@ -39,7 +39,7 @@ export default function About() {
               <div className="absolute -top-2.5 -start-2.5 w-7 h-7 border-t-2 border-s-2 border-accent-light rounded-tl-sm" />
               <div className="absolute -bottom-2.5 -end-2.5 w-7 h-7 border-b-2 border-e-2 border-accent-light rounded-br-sm" />
               {/* Floating badge */}
-              <div className="absolute -bottom-4 -end-4 sm:-end-6 bg-[#0f0f23] border border-white/10 rounded-xl px-3 py-2 shadow-xl">
+              <div className="absolute bottom-3 end-3 bg-[#0a0a18]/90 backdrop-blur-sm border border-white/10 rounded-xl px-3 py-2 shadow-xl">
                 <span className="text-accent-light font-bold text-sm">Fullstack</span>
                 <br />
                 <span className="text-slate-400 text-xs">Developer</span>
