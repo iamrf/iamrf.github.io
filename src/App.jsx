@@ -13,7 +13,8 @@ export default function App() {
   const { i18n } = useTranslation()
 
   useEffect(() => {
-    const dir = i18n.language === 'fa' ? 'rtl' : 'ltr'
+    const RTL_LANGS = ['fa', 'ar', 'ur']
+    const dir = RTL_LANGS.includes(i18n.language) ? 'rtl' : 'ltr'
     document.documentElement.setAttribute('dir', dir)
     document.documentElement.setAttribute('lang', i18n.language)
   }, [i18n.language])

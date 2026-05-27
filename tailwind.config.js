@@ -18,6 +18,8 @@ export default {
       fontFamily: {
         en: ['Inter', 'sans-serif'],
         fa: ['Vazirmatn', 'sans-serif'],
+        ar: ['Cairo', 'sans-serif'],
+        zh: ['"Noto Sans SC"', 'sans-serif'],
       },
       animation: {
         float: 'float 7s ease-in-out infinite',

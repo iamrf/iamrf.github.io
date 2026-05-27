@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "关于我",
+    "skills": "技能",
+    "projects": "项目",
+    "experience": "经验",
+    "contact": "联系"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "Aref Fallah",
+    "roles": ["全栈开发者", "React 专家", "Python 开发者", "Linux 服务器管理员", "问题解决者"],
+    "tagline": "我构建优雅、高性能的 Web 应用程序——从精美的前端界面到强大的后端系统。",
+    "cta_work": "查看我的作品",
+    "cta_contact": "联系我",
+    "scroll_hint": "向下滚动"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "我是谁",
+    "bio_1": "我是一位充满激情的全栈 Web 开发者，拥有多年构建可扩展、以用户为中心的 Web 应用程序的经验。专注于 React 前端和 Python/Django 后端开发。",
+    "bio_2": "我热爱将复杂问题转化为简洁直观的界面。无论是设计 REST API 架构还是精心制作像素级完美的用户界面，我都以同样的专注投入每一层技术栈。",
+    "bio_3": "不写代码的时候，我会探索新技术、参与开源项目，或通过我的博客和课程分享知识。",
+    "stats": {
+      "experience": "年经验",
+      "projects": "交付项目",
+      "clients": "满意客户",
+      "technologies": "技术栈"
+    },
+    "download_cv": "下载简历"
+  },
+  "skills": {
+    "title": "技能与技术栈",
+    "subtitle": "我的工具箱",
+    "categories": {
+      "frontend": "前端",
+      "backend": "后端",
+      "tools": "工具与 DevOps"
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "我构建的作品",
+    "view_all": "在 GitHub 上查看全部",
+    "demo": "在线演示",
+    "code": "源代码"
+  },
+  "experience": {
+    "title": "工作经验",
+    "subtitle": "我的历程"
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "让我们合作",
+    "description": "有项目想法或想讨论合作机会？我很乐意听取您的想法。我始终对有趣的想法和新的合作持开放态度。",
+    "form": {
+      "name": "您的姓名",
+      "email": "您的邮箱",
+      "message": "您的留言",
+      "send": "发送消息",
+      "success": "消息已发送！我会尽快回复您。",
+      "error": "出了点问题，请重试。"
+    },
+    "social": "或在以下平台找到我"
+  },
+  "footer": {
+    "rights": "版权所有。",
+    "built": "由 GitHub 强力驱动"
+  }
+}

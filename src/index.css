@@ -21,13 +21,44 @@
     background-color: #0a0a18;
   }
 
-  [dir='rtl'],
-  [dir='rtl'] body,
-  [dir='rtl'] input,
-  [dir='rtl'] textarea,
-  [dir='rtl'] button,
-  [dir='rtl'] select {
+  /* Persian */
+  html[lang='fa'],
+  html[lang='fa'] body,
+  html[lang='fa'] input,
+  html[lang='fa'] textarea,
+  html[lang='fa'] button,
+  html[lang='fa'] select {
     font-family: var(--font-fa);
+  }
+
+  /* Arabic */
+  html[lang='ar'],
+  html[lang='ar'] body,
+  html[lang='ar'] input,
+  html[lang='ar'] textarea,
+  html[lang='ar'] button,
+  html[lang='ar'] select {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  /* Urdu */
+  html[lang='ur'],
+  html[lang='ur'] body,
+  html[lang='ur'] input,
+  html[lang='ur'] textarea,
+  html[lang='ur'] button,
+  html[lang='ur'] select {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  /* Chinese */
+  html[lang='zh'],
+  html[lang='zh'] body,
+  html[lang='zh'] input,
+  html[lang='zh'] textarea,
+  html[lang='zh'] button,
+  html[lang='zh'] select {
+    font-family: 'Noto Sans SC', sans-serif;
   }
 
   ::-webkit-scrollbar {

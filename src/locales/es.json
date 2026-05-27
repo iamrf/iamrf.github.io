@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Aref Fallah",
+    "roles": ["Desarrollador Fullstack", "Experto en React", "Desarrollador Python", "Admin Linux", "Solucionador de Problemas"],
+    "tagline": "Construyo aplicaciones web elegantes y de alto rendimiento — desde interfaces perfectas hasta backends robustos.",
+    "cta_work": "Ver Mi Trabajo",
+    "cta_contact": "Contactar",
+    "scroll_hint": "Desplaza para explorar"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Quién soy",
+    "bio_1": "Soy un apasionado Desarrollador Web Fullstack con años de experiencia construyendo aplicaciones web escalables y centradas en el usuario. Me especializo en React en el frontend y Python/Django en el backend.",
+    "bio_2": "Me encanta convertir problemas complejos en interfaces limpias e intuitivas. Ya sea arquitectando una REST API o creando interfaces de usuario pixel-perfect, aporto la misma atención al detalle en cada capa.",
+    "bio_3": "Cuando no estoy programando, exploro nuevas tecnologías, contribuyo a proyectos de código abierto o comparto conocimiento a través de mi blog y cursos.",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Entregados",
+      "clients": "Clientes Satisfechos",
+      "technologies": "Tecnologías"
+    },
+    "download_cv": "Descargar CV"
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "subtitle": "Con qué trabajo",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas y DevOps"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Lo que he construido",
+    "view_all": "Ver Todo en GitHub",
+    "demo": "Demo en Vivo",
+    "code": "Código Fuente"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi Trayectoria"
+  },
+  "contact": {
+    "title": "Ponerse en Contacto",
+    "subtitle": "Trabajemos juntos",
+    "description": "¿Tienes un proyecto en mente o quieres discutir oportunidades? Me encantaría escucharte. Siempre estoy abierto a ideas interesantes y nuevas colaboraciones.",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Email",
+      "message": "Tu Mensaje",
+      "send": "Enviar Mensaje",
+      "success": "¡Mensaje enviado! Te responderé pronto.",
+      "error": "Algo salió mal. Por favor intenta de nuevo."
+    },
+    "social": "O encuéntrame en"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "built": "Desarrollado con GitHub"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "Hakkımda",
+    "skills": "Beceriler",
+    "projects": "Projeler",
+    "experience": "Deneyim",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "name": "Aref Fallah",
+    "roles": ["Fullstack Geliştirici", "React Uzmanı", "Python Geliştirici", "Linux Sunucu Yöneticisi", "Problem Çözücü"],
+    "tagline": "Şık ve yüksek performanslı web uygulamaları geliştiriyorum — mükemmel arayüzlerden sağlam arka uçlara.",
+    "cta_work": "Çalışmalarımı Gör",
+    "cta_contact": "İletişime Geç",
+    "scroll_hint": "Aşağı kaydır"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "subtitle": "Kim olduğum",
+    "bio_1": "Kullanıcı odaklı, ölçeklenebilir web uygulamaları geliştirme konusunda yıllarca deneyime sahip tutkulu bir Fullstack Web Geliştiricisiyim. Frontend'de React, backend'de Python/Django konusunda uzmanlaşmış durumdayım.",
+    "bio_2": "Karmaşık sorunları temiz ve sezgisel arayüzlere dönüştürmeyi seviyorum. İster bir REST API mimarisi oluşturmak ister piksel mükemmelliğinde UI'lar tasarlamak olsun, stack'in her katmanına aynı özenle yaklaşıyorum.",
+    "bio_3": "Kod yazmadığım zamanlarda yeni teknolojiler keşfediyor, açık kaynak projelere katkıda bulunuyor veya blog ve kurslarım aracılığıyla bilgi paylaşıyorum.",
+    "stats": {
+      "experience": "Yıl Deneyim",
+      "projects": "Teslim Edilen Proje",
+      "clients": "Mutlu Müşteri",
+      "technologies": "Teknoloji"
+    },
+    "download_cv": "CV İndir"
+  },
+  "skills": {
+    "title": "Beceriler ve Teknolojiler",
+    "subtitle": "Kullandıklarım",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Araçlar ve DevOps"
+    }
+  },
+  "projects": {
+    "title": "Projeler",
+    "subtitle": "Neler yaptım",
+    "view_all": "GitHub'da Tümünü Gör",
+    "demo": "Canlı Demo",
+    "code": "Kaynak Kod"
+  },
+  "experience": {
+    "title": "Deneyim",
+    "subtitle": "Yolculuğum"
+  },
+  "contact": {
+    "title": "İletişime Geç",
+    "subtitle": "Birlikte çalışalım",
+    "description": "Aklınızda bir proje mi var veya fırsatları tartışmak mı istiyorsunuz? Sizden haber almak isterim. İlginç fikirlere ve yeni işbirliklerine her zaman açığım.",
+    "form": {
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "message": "Mesajınız",
+      "send": "Mesaj Gönder",
+      "success": "Mesaj gönderildi! Yakında yanıt vereceğim.",
+      "error": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+    },
+    "social": "Ya da beni şurada bulun"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "built": "GitHub Tarafından Desteklenmektedir"
+  }
+}
