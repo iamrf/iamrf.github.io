@@ -1,5 +1,50 @@
 export const projects = [
   {
+    id: 7,
+    title: {
+      en: 'NarenjWeb',
+      fa: 'نارنج‌وب',
+    },
+    description: {
+      en: 'A modern bilingual web agency website built with Next.js 14 and TypeScript. Features full FA/EN internationalization, smooth Framer Motion animations, server-side rendering, and a fully responsive design.',
+      fa: 'وبسایت آژانس وب مدرن دوزبانه ساخته‌شده با Next.js 14 و TypeScript. دارای پشتیبانی کامل FA/EN، انیمیشن‌های Framer Motion، رندرینگ سمت سرور و طراحی واکنش‌گرا.',
+    },
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Framer Motion'],
+    gradient: 'from-orange-500 to-amber-500',
+    github: null,
+    live: 'https://www.narenjweb.ir',
+  },
+  {
+    id: 8,
+    title: {
+      en: 'GuardIran',
+      fa: 'گارد ایران',
+    },
+    description: {
+      en: 'Frontend development for GuardIran, an organization focused on digital security awareness and VPN services. Built with a modern React stack featuring a clean, accessible, and fully responsive interface.',
+      fa: 'توسعه فرانت‌اند برای گارد ایران، سازمانی متمرکز بر آگاهی‌رسانی در زمینه امنیت دیجیتال و سرویس‌های VPN. ساخته شده با React با رابط کاربری تمیز، قابل دسترس و واکنش‌گرا.',
+    },
+    tags: ['React', 'JavaScript', 'Tailwind', 'Responsive'],
+    gradient: 'from-blue-600 to-indigo-700',
+    github: null,
+    live: 'https://guardiran.org',
+  },
+  {
+    id: 9,
+    title: {
+      en: 'SurvPNBot',
+      fa: 'سرو‌پی‌ان‌بات',
+    },
+    description: {
+      en: 'A Telegram Mini App for VPN subscription management and surveys. Delivers a seamless in-chat experience with real-time data, native Telegram authentication, and a mobile-first UI optimized for touch.',
+      fa: 'یک تلگرام مینی‌اپ برای مدیریت اشتراک VPN و نظرسنجی. تجربه‌ای یکپارچه درون چت با داده‌های لحظه‌ای، احراز هویت تلگرام و رابط کاربری موبایل‌فرست بهینه‌شده برای لمس.',
+    },
+    tags: ['Telegram Mini App', 'React', 'JavaScript', 'Bot API'],
+    gradient: 'from-sky-400 to-blue-600',
+    github: null,
+    live: null,
+  },
+  {
     id: 1,
     title: {
       en: 'E-Commerce Platform',
