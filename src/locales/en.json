@@ -18,7 +18,7 @@
   "about": {
     "title": "About Me",
     "subtitle": "Who I am",
-    "bio_1": "I'm a passionate Fullstack Web Developer with years of experience building scalable, user-centric web applications. I specialize in React on the frontend and Python/Django on the backend.",
+    "bio_1": "I'm a passionate Fullstack Web Developer with years of experience building scalable, user-centric web applications. I specialize in React on the frontend and NodeJS/Django on the backend.",
     "bio_2": "I love turning complex problems into clean, intuitive interfaces. Whether architecting a REST API or crafting pixel-perfect UIs, I bring the same attention to detail to every layer of the stack.",
     "bio_3": "When I'm not coding, I'm exploring new technologies, contributing to open-source projects, or sharing knowledge through my blog and courses.",
     "stats": {

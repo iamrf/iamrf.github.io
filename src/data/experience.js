@@ -7,7 +7,7 @@ export const experiences = [
       en: 'Building scalable web applications for international clients. Leading architecture decisions, conducting code reviews, and mentoring junior developers. Delivering end-to-end solutions from database design to UI implementation.',
       fa: 'ساخت اپلیکیشن‌های وب مقیاس‌پذیر برای مشتریان بین‌المللی. رهبری تصمیمات معماری، بررسی کد و راهنمایی توسعه‌دهندگان جوان. ارائه راه‌حل‌های کامل از طراحی پایگاه داده تا پیاده‌سازی رابط کاربری.',
     },
-    tags: ['React', 'Django', 'PostgreSQL', 'Docker'],
+    tags: ['React', 'NextJS', 'Django', 'PostgreSQL', 'Docker'],
   },
   {
     period: { en: '2020 — 2022', fa: '۱۳۹۹ — ۱۴۰۱' },
@@ -20,7 +20,7 @@ export const experiences = [
     tags: ['React', 'Python', 'Django REST', 'MySQL'],
   },
   {
-    period: { en: '2018 — 2020', fa: '۱۳۹۷ — ۱۳۹۹' },
+    period: { en: '2016 — 2020', fa: '۱۳۹۵ — ۱۳۹۹' },
     role: { en: 'Python / Django Developer', fa: 'توسعه‌دهنده Python / Django' },
     company: { en: 'Software Agency', fa: 'آژانس نرم‌افزاری' },
     description: {
@@ -30,7 +30,7 @@ export const experiences = [
     tags: ['Python', 'Django', 'PostgreSQL', 'Linux'],
   },
   {
-    period: { en: '2016 — 2018', fa: '۱۳۹۵ — ۱۳۹۷' },
+    period: { en: '2007 — 2016', fa: '۱۳۸۶ — ۱۳۹۵' },
     role: { en: 'Web Designer & Junior Developer', fa: 'طراح وب و توسعه‌دهنده جوان' },
     company: { en: 'Digital Marketing Agency', fa: 'آژانس بازاریابی دیجیتال' },
     description: {

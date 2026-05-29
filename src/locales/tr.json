@@ -18,7 +18,7 @@
   "about": {
     "title": "Hakkımda",
     "subtitle": "Kim olduğum",
-    "bio_1": "Kullanıcı odaklı, ölçeklenebilir web uygulamaları geliştirme konusunda yıllarca deneyime sahip tutkulu bir Fullstack Web Geliştiricisiyim. Frontend'de React, backend'de Python/Django konusunda uzmanlaşmış durumdayım.",
+    "bio_1": "Kullanıcı odaklı, ölçeklenebilir web uygulamaları geliştirme konusunda yıllarca deneyime sahip tutkulu bir Fullstack Web Geliştiricisiyim. Frontend'de React, backend'de NodeJS/Django konusunda uzmanlaşmış durumdayım.",
     "bio_2": "Karmaşık sorunları temiz ve sezgisel arayüzlere dönüştürmeyi seviyorum. İster bir REST API mimarisi oluşturmak ister piksel mükemmelliğinde UI'lar tasarlamak olsun, stack'in her katmanına aynı özenle yaklaşıyorum.",
     "bio_3": "Kod yazmadığım zamanlarda yeni teknolojiler keşfediyor, açık kaynak projelere katkıda bulunuyor veya blog ve kurslarım aracılığıyla bilgi paylaşıyorum.",
     "stats": {

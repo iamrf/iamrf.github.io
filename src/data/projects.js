@@ -21,8 +21,8 @@ export const projects = [
       fa: 'گارد ایران',
     },
     description: {
-      en: 'Frontend development for GuardIran, an organization focused on digital security awareness and VPN services. Built with a modern React stack featuring a clean, accessible, and fully responsive interface.',
-      fa: 'توسعه فرانت‌اند برای گارد ایران، سازمانی متمرکز بر آگاهی‌رسانی در زمینه امنیت دیجیتال و سرویس‌های VPN. ساخته شده با React با رابط کاربری تمیز، قابل دسترس و واکنش‌گرا.',
+      en: 'Frontend development for GuardIran, an organization focused on digital security awareness. Built with a modern React stack featuring a clean, accessible, and fully responsive interface.',
+      fa: 'توسعه فرانت‌اند برای گارد ایران، سازمانی متمرکز بر آگاهی‌رسانی در زمینه امنیت دیجیتال . ساخته شده با React با رابط کاربری تمیز، قابل دسترس و واکنش‌گرا.', 
     },
     tags: ['React', 'JavaScript', 'Tailwind', 'Responsive'],
     gradient: 'from-blue-600 to-indigo-700',
@@ -32,17 +32,17 @@ export const projects = [
   {
     id: 9,
     title: {
-      en: 'SurvPNBot',
-      fa: 'سرو‌پی‌ان‌بات',
+      en: 'SurVPBot',
+      fa: 'سور وی پی بات',
     },
     description: {
-      en: 'A Telegram Mini App for VPN subscription management and surveys. Delivers a seamless in-chat experience with real-time data, native Telegram authentication, and a mobile-first UI optimized for touch.',
-      fa: 'یک تلگرام مینی‌اپ برای مدیریت اشتراک VPN و نظرسنجی. تجربه‌ای یکپارچه درون چت با داده‌های لحظه‌ای، احراز هویت تلگرام و رابط کاربری موبایل‌فرست بهینه‌شده برای لمس.',
+      en: 'A Telegram Mini App for DNS subscription management and surveys. Delivers a seamless in-chat experience with real-time data, native Telegram authentication, and a mobile-first UI optimized for touch.',
+      fa: 'یک تلگرام مینی‌اپ برای مدیریت اشتراک تحریم گذر و نظرسنجی. تجربه‌ای یکپارچه درون چت با داده‌های لحظه‌ای، احراز هویت تلگرام و رابط کاربری موبایل‌فرست بهینه‌شده برای لمس.',
     },
     tags: ['Telegram Mini App', 'React', 'JavaScript', 'Bot API'],
     gradient: 'from-sky-400 to-blue-600',
     github: null,
-    live: null,
+    live: 'https://t.me/survpnbot',
   },
   {
     id: 1,
