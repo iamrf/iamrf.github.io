@@ -13,6 +13,7 @@ export const projects = [
     gradient: 'from-emerald-500 to-teal-600',
     github: null,
     live: 'https://gigup-rho.vercel.app',
+    telegram: 'https://t.me/gigup1bot',
   },
   {
     id: 10,
@@ -28,6 +29,7 @@ export const projects = [
     gradient: 'from-yellow-500 to-orange-600',
     github: null,
     live: 'https://cheetah-pied.vercel.app',
+    telegram: 'https://t.me/cheetahshop_bot',
   },
   {
     id: 11,
