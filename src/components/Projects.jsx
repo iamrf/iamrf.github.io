@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import { Github, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink, Send } from 'lucide-react'
 import SectionHeader from './SectionHeader'
 import { projects } from '../data/projects'
 
@@ -70,6 +70,17 @@ export default function Projects() {
                     >
                       <ExternalLink size={14} />
                       {t('projects.demo')}
+                    </a>
+                  )}
+                  {project.telegram && (
+                    <a
+                      href={project.telegram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-sky-400 hover:text-white text-sm transition-colors duration-200"
+                    >
+                      <Send size={14} />
+                      {t('projects.telegram')}
                     </a>
                   )}
                 </div>

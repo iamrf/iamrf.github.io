@@ -1,13 +1,58 @@
 export const projects = [
   {
+    id: 12,
+    title: {
+      en: 'GigUP',
+      fa: 'گیگ‌آپ',
+    },
+    description: {
+      en: 'A simple Next.js VPN shop with a frictionless buy-and-use flow. No registration required — purchase a plan and get connected in minutes.',
+      fa: 'فروشگاه ساده VPN ساخته‌شده با Next.js با جریان خرید و استفاده آسان. بدون نیاز به ثبت‌نام — پلن را بخرید و در چند دقیقه متصل شوید.',
+    },
+    tags: ['Next.js', 'VPN Shop', 'E-Commerce', 'Vercel'],
+    gradient: 'from-emerald-500 to-teal-600',
+    github: null,
+    live: 'https://gigup-rho.vercel.app',
+  },
+  {
+    id: 10,
+    title: {
+      en: 'Cheetah Marketplace',
+      fa: 'بازارچه چیتا',
+    },
+    description: {
+      en: 'A Next.js digital marketplace web app for buying and selling digital products. Features a modern storefront, product listings, and a smooth shopping experience built for performance.',
+      fa: 'وب‌اپلیکیشن مارکت‌پلیس دیجیتال ساخته‌شده با Next.js برای خرید و فروش محصولات دیجیتال. دارای فروشگاه مدرن، لیست محصولات و تجربه خرید روان و بهینه‌شده.',
+    },
+    tags: ['Next.js', 'React', 'Digital Marketplace', 'Vercel'],
+    gradient: 'from-yellow-500 to-orange-600',
+    github: null,
+    live: 'https://cheetah-pied.vercel.app',
+  },
+  {
+    id: 11,
+    title: {
+      en: 'Orcaa',
+      fa: 'اورکا',
+    },
+    description: {
+      en: 'A WordPress online wear shop for fashion apparel. Custom-built storefront with product catalog, cart, and checkout tailored for an Iranian clothing brand.',
+      fa: 'فروشگاه آنلاین پوشاک مبتنی بر وردپرس. ویترین سفارشی با کاتالوگ محصولات، سبد خرید و پرداخت، طراحی‌شده برای برند پوشاک ایرانی.',
+    },
+    tags: ['WordPress', 'WooCommerce', 'E-Commerce', 'PHP'],
+    gradient: 'from-slate-500 to-zinc-700',
+    github: null,
+    live: 'https://orcaa.ir',
+  },
+  {
     id: 7,
     title: {
       en: 'NarenjWeb',
       fa: 'نارنج‌وب',
     },
     description: {
-      en: 'A modern bilingual web agency website built with Next.js 14 and TypeScript. Features full FA/EN internationalization, smooth Framer Motion animations, server-side rendering, and a fully responsive design.',
-      fa: 'وبسایت آژانس وب مدرن دوزبانه ساخته‌شده با Next.js 14 و TypeScript. دارای پشتیبانی کامل FA/EN، انیمیشن‌های Framer Motion، رندرینگ سمت سرور و طراحی واکنش‌گرا.',
+      en: 'A modern bilingual web agency website built with Next.js 14 and TypeScript for Narenj Web company. Features full FA/EN internationalization, smooth Framer Motion animations, server-side rendering, and a fully responsive design.',
+      fa: 'وبسایت آژانس وب مدرن دوزبانه ساخته‌شده با Next.js 14 و TypeScript برای شرکت نارنج‌وب. دارای پشتیبانی کامل FA/EN، انیمیشن‌های Framer Motion، رندرینگ سمت سرور و طراحی واکنش‌گرا.',
     },
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Framer Motion'],
     gradient: 'from-orange-500 to-amber-500',
@@ -32,17 +77,18 @@ export const projects = [
   {
     id: 9,
     title: {
-      en: 'SurVPBot',
-      fa: 'سور وی پی بات',
+      en: 'SurVPN',
+      fa: 'سور وی‌پی‌ان',
     },
     description: {
-      en: 'A Telegram Mini App for DNS subscription management and surveys. Delivers a seamless in-chat experience with real-time data, native Telegram authentication, and a mobile-first UI optimized for touch.',
-      fa: 'یک تلگرام مینی‌اپ برای مدیریت اشتراک تحریم گذر و نظرسنجی. تجربه‌ای یکپارچه درون چت با داده‌های لحظه‌ای، احراز هویت تلگرام و رابط کاربری موبایل‌فرست بهینه‌شده برای لمس.',
+      en: 'A web landing page and Telegram bot for DNS subscription management and surveys. Features a modern marketing site, in-chat Mini App experience, real-time data, and native Telegram authentication.',
+      fa: 'لندینگ پیج وب و ربات تلگرام برای مدیریت اشتراک تحریم‌گذر و نظرسنجی. شامل سایت معرفی مدرن، تجربه مینی‌اپ درون چت، داده‌های لحظه‌ای و احراز هویت تلگرام.',
     },
-    tags: ['Telegram Mini App', 'React', 'JavaScript', 'Bot API'],
+    tags: ['Next.js', 'Telegram Bot', 'React', 'Landing Page'],
     gradient: 'from-sky-400 to-blue-600',
     github: null,
-    live: 'https://t.me/survpnbot',
+    live: 'https://survpn.xyz',
+    telegram: 'https://t.me/survpnbot',
   },
   {
     id: 1,
