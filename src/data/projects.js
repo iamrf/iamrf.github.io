@@ -182,4 +182,36 @@ export const projects = [
     github: 'https://github.com/iamrf',
     live: null,
   },
+  {
+    id: 13,
+    title: {
+      en: 'FactorFA',
+      fa: 'فکتورفا',
+    },
+    description: {
+      en: 'A Persian web application and Telegram Mini App for creating online invoices quickly and easily. Fast, simple flow for generating professional invoices on the web or inside Telegram.',
+      fa: 'وب‌اپلیکیشن فارسی و تلگرام مینی‌اپ برای ساخت آسان و سریع فاکتور آنلاین. جریان ساده برای ایجاد فاکتور حرفه‌ای در وب یا داخل تلگرام.',
+    },
+    tags: ['Next.js', 'Telegram Mini App', 'Invoice', 'Persian'],
+    gradient: 'from-rose-500 to-red-600',
+    github: null,
+    live: 'https://factorfa.vercel.app',
+    telegram: 'https://t.me/factorfa_bot',
+  },
+  {
+    id: 14,
+    title: {
+      en: 'ChannelX',
+      fa: 'چنل‌ایکس',
+    },
+    description: {
+      en: 'An open-source Telegram bot that automatically shares channel posts to an X (Twitter) account. Connect your channel and keep your social feed in sync without manual posting.',
+      fa: 'ربات متن‌باز تلگرام که پست‌های کانال را به‌صورت خودکار در حساب X (توییتر) منتشر می‌کند. کانال را وصل کنید و فید شبکه‌های اجتماعی را بدون انتشار دستی همگام نگه دارید.',
+    },
+    tags: ['Telegram Bot', 'Open Source', 'X / Twitter', 'Automation'],
+    gradient: 'from-zinc-400 to-neutral-700',
+    github: 'https://github.com/iamrf/channelx',
+    live: null,
+    telegram: 'https://t.me/channel2x_bot',
+  },
 ]
