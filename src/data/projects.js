@@ -62,6 +62,21 @@ export const projects = [
     live: 'https://www.narenjweb.ir',
   },
   {
+    id: 15,
+    title: {
+      en: 'Narenj Uploader',
+      fa: 'آپلودر نارنج',
+    },
+    description: {
+      en: 'Lifetime free image uploader. Drop a file, copy a fast CDN link — no signup, no limits, just instant hosting for your images.',
+      fa: 'آپلودر تصویر رایگان مادام‌العمر. فایل را رها کنید، لینک سریع CDN را کپی کنید — بدون ثبت‌نام، بدون محدودیت، فقط میزبانی آنی تصاویر.',
+    },
+    tags: ['Next.js', 'Image Upload', 'CDN', 'Free'],
+    gradient: 'from-amber-400 to-orange-600',
+    github: null,
+    live: 'https://picser-nu.vercel.app',
+  },
+  {
     id: 8,
     title: {
       en: 'GuardIran',
