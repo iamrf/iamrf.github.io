@@ -1,0 +1,16 @@
+[Unit]
+Description=Portfolio auto-update (git pull + build)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=portfolio
+Group=portfolio
+Environment=APP_DIR=/var/www/portfolio
+EnvironmentFile=-/var/www/portfolio/shared/deploy.env
+ExecStart=/usr/local/bin/portfolio-auto-update
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

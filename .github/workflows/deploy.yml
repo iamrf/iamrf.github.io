@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -25,7 +27,7 @@ jobs:
           cache: npm
 
       - run: npm ci
-
+      - run: npm test
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

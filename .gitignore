@@ -6,3 +6,11 @@ vendor
 Gemfile.lock
 node_modules
 dist
+.vercel
+coverage
+*.log
+.DS_Store
+portfolio-release.tar.gz
+.env
+.env.*
+!.env.example

@@ -1,0 +1,18 @@
+[Unit]
+Description=Portfolio deploy webhook (auto-update on push)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=portfolio
+Group=portfolio
+Environment=APP_DIR=/var/www/portfolio
+Environment=WEBHOOK_PORT=9000
+EnvironmentFile=-/var/www/portfolio/shared/deploy.env
+ExecStart=/usr/local/bin/portfolio-webhook
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

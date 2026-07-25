@@ -1,0 +1,116 @@
+# GitLab CI/CD — test, build, Pages, Vercel, Ubuntu auto-deploy on push
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  NODE_VERSION: "20"
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+default:
+  image: node:${NODE_VERSION}-bookworm
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm/
+      - node_modules/
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+
+test:
+  stage: test
+  script:
+    - npm ci
+    - npm test
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    name: "portfolio-dist-$CI_COMMIT_SHORT_SHA"
+    expire_in: 7 days
+    paths:
+      - dist/
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+
+pages:
+  stage: deploy
+  needs: [build]
+  script:
+    - mkdir -p public
+    - cp -r dist/. public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+deploy_vercel:
+  stage: deploy
+  needs: [test, build]
+  image: node:${NODE_VERSION}-bookworm
+  script:
+    - npm install -g vercel@latest
+    - vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+    - vercel build --prod --token="$VERCEL_TOKEN"
+    - vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: on_success
+  environment:
+    name: vercel-production
+
+deploy_ubuntu:
+  stage: deploy
+  needs: [test, build]
+  image: alpine:3.20
+  before_script:
+    - apk add --no-cache openssh-client tar curl bash
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$UBUNTU_SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ed25519
+    - chmod 600 ~/.ssh/id_ed25519
+    - |
+      if [ -n "${UBUNTU_SSH_KNOWN_HOSTS:-}" ]; then
+        echo "$UBUNTU_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+      else
+        ssh-keyscan -H "$UBUNTU_HOST" >> ~/.ssh/known_hosts
+      fi
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - tar -czf portfolio-release.tar.gz -C dist .
+    - |
+      set -euo pipefail
+      PORT="${UBUNTU_SSH_PORT:-22}"
+      APP_DIR="${UBUNTU_APP_DIR:-/var/www/portfolio}"
+      REMOTE="${UBUNTU_USER}@${UBUNTU_HOST}"
+      scp -P "$PORT" portfolio-release.tar.gz "$REMOTE:/tmp/portfolio-release.tar.gz"
+      scp -P "$PORT" deploy/ubuntu/remote-activate.sh "$REMOTE:/tmp/portfolio-remote-activate.sh"
+      ssh -p "$PORT" "$REMOTE" "chmod +x /tmp/portfolio-remote-activate.sh && APP_DIR='$APP_DIR' RELEASE_SHA='$CI_COMMIT_SHA' /tmp/portfolio-remote-activate.sh"
+    - |
+      if [ -n "${UBUNTU_HEALTH_URL:-}" ]; then
+        for i in 1 2 3 4 5; do
+          code=$(curl -fsS -o /dev/null -w "%{http_code}" "$UBUNTU_HEALTH_URL" || true)
+          echo "Health attempt $i → $code"
+          echo "$code" | grep -qE '200|301|302' && exit 0
+          sleep 5
+        done
+        exit 1
+      fi
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: on_success
+  environment:
+    name: ubuntu-production
+    url: $UBUNTU_HEALTH_URL
