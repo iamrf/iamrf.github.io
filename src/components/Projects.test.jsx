@@ -22,10 +22,23 @@ describe('Projects', () => {
 
     expect(document.getElementById('projects')).toBeTruthy()
     expect(screen.getByRole('heading', { name: 'Projects' })).toBeInTheDocument()
+    expect(screen.getByText('Fandoq')).toBeInTheDocument()
     expect(screen.getByText('GigUP')).toBeInTheDocument()
     expect(screen.getByText('FactorFA')).toBeInTheDocument()
     expect(screen.getByText('ChannelX')).toBeInTheDocument()
     expect(screen.getByText('Narenj Uploader')).toBeInTheDocument()
+  })
+
+  it('exposes live and telegram links for Fandoq', () => {
+    renderProjects()
+
+    const card = screen.getByText('Fandoq').closest('article')
+    expect(card).toBeTruthy()
+
+    const links = within(card).getAllByRole('link')
+    const hrefs = links.map((a) => a.getAttribute('href'))
+    expect(hrefs).toContain('https://fandoq.net')
+    expect(hrefs).toContain('https://t.me/FandoqRobot')
   })
 
   it('exposes live and telegram links for GigUP', () => {

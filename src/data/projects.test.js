@@ -37,10 +37,15 @@ describe('projects data', () => {
     }
   })
 
+  it('lists Fandoq first', () => {
+    expect(projects[0].title.en).toBe('Fandoq')
+  })
+
   it('includes key portfolio apps', () => {
     const titles = projects.map((p) => p.title.en)
     expect(titles).toEqual(
       expect.arrayContaining([
+        'Fandoq',
         'GigUP',
         'Cheetah Marketplace',
         'NarenjWeb',

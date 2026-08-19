@@ -1,5 +1,33 @@
 export const projects = [
   {
+    id: 16,
+    title: {
+      en: 'Fandoq',
+      fa: 'فندق',
+      ar: 'فندق',
+      ur: 'فندق',
+      es: 'Fandoq',
+      ru: 'Fandoq',
+      zh: 'Fandoq',
+      tr: 'Fandoq',
+    },
+    description: {
+      en: 'Fandoq is your direct access point for premium digital services and AI subscriptions. We bypass the usual friction of upgrading accounts. You grab a secure activation link for tools like Google AI Pro, and you are immediately set. The platform runs on a hybrid payment engine that handles both live crypto market pricing and local currency down to the subcent, supported by a built-in wallet and a multi-level referral system. It is built to make upgrading and managing your digital toolstack fast, secure, and completely straightforward.',
+      fa: 'فندق نقطه دسترسی مستقیم شما به سرویس‌های دیجیتال پریمیوم و اشتراک‌های هوش مصنوعی است. ما اصطکاک معمول ارتقای حساب‌ها را حذف می‌کنیم؛ یک لینک فعال‌سازی امن برای ابزارهایی مثل Google AI Pro دریافت می‌کنید و بلافاصله آماده‌اید. پلتفرم روی موتور پرداخت ترکیبی اجرا می‌شود که قیمت‌گذاری لحظه‌ای بازار رمزارز و ارز محلی تا زیر سنت را پشتیبانی می‌کند، همراه با کیف پول داخلی و سیستم معرفی چندسطحی. ساخته شده تا ارتقا و مدیریت مجموعه ابزارهای دیجیتال شما سریع، امن و کاملاً ساده باشد.',
+      ar: 'فندق هو بوابتك المباشرة للخدمات الرقمية المميزة واشتراكات الذكاء الاصطناعي. نتجاوز عناء ترقية الحسابات المعتاد. تحصل على رابط تفعيل آمن لأدوات مثل Google AI Pro وتكون جاهزاً فوراً. تعمل المنصة على محرك دفع هجين يتعامل مع أسعار العملات المشفرة اللحظية والعملة المحلية بدقة أقل من سنت، مدعوماً بمحفظة مدمجة ونظام إحالة متعدد المستويات. صُممت لجعل ترقية وإدارة مجموعة أدواتك الرقمية سريعة وآمنة ومباشرة تماماً.',
+      ur: 'فندق پریمیم ڈیجیٹل سروسز اور AI سبسکرپشنز تک آپ کی براہ راست رسائی ہے۔ ہم اکاؤنٹ اپ گریڈ کرنے کی معمولی مشکلات کو ختم کرتے ہیں۔ Google AI Pro جیسے ٹولز کے لیے محفوظ ایکٹیویشن لنک حاصل کریں اور فوراً تیار ہو جائیں۔ پلیٹ فارم ہائبرڈ ادائیگی انجن پر چلتا ہے جو لائیو کرپٹو مارکیٹ قیمتوں اور مقامی کرنسی کو سب سینٹ تک ہینڈل کرتا ہے، بلٹ اِن والیٹ اور ملٹی لیول ریفرل سسٹم کے ساتھ۔ آپ کے ڈیجیٹل ٹول اسٹیک کو اپ گریڈ اور منظم کرنا تیز، محفوظ اور بالکل سیدھا بنانے کے لیے بنایا گیا ہے۔',
+      es: 'Fandoq es tu punto de acceso directo a servicios digitales premium y suscripciones de IA. Eliminamos la fricción habitual de actualizar cuentas. Obtienes un enlace de activación seguro para herramientas como Google AI Pro y quedas listo al instante. La plataforma funciona con un motor de pagos híbrido que gestiona precios de criptomonedas en tiempo real y moneda local hasta el subcentavo, con billetera integrada y un sistema de referidos multinivel. Está diseñada para que actualizar y gestionar tu stack digital sea rápido, seguro y completamente sencillo.',
+      ru: 'Fandoq — ваш прямой доступ к премиальным цифровым сервисам и AI-подпискам. Мы убираем обычные сложности с апгрейдом аккаунтов. Вы получаете безопасную ссылку активации для инструментов вроде Google AI Pro и сразу готовы к работе. Платформа работает на гибридном платёжном движке с live-курсами криптовалют и локальной валютой с точностью до субцента, встроенным кошельком и многоуровневой реферальной системой. Создана, чтобы обновление и управление вашим цифровым стеком было быстрым, безопасным и предельно простым.',
+      zh: 'Fandoq 是您获取优质数字服务和 AI 订阅的直接入口。我们省去升级账户的常见繁琐流程。您只需获取 Google AI Pro 等工具的安全激活链接，即可立即使用。平台采用混合支付引擎，支持实时加密货币定价和精确到亚分的本地货币结算，并内置钱包与多级推荐系统。旨在让您快速、安全、轻松地升级和管理数字工具栈。',
+      tr: 'Fandoq, premium dijital hizmetler ve yapay zeka aboneliklerine doğrudan erişim noktanızdır. Hesap yükseltmedeki olağan sürtünmeyi ortadan kaldırıyoruz. Google AI Pro gibi araçlar için güvenli bir aktivasyon bağlantısı alıyorsunuz ve anında hazırsınız. Platform, canlı kripto piyasa fiyatlandırması ve yerel para birimini sent altına kadar destekleyen hibrit bir ödeme motoru üzerinde çalışır; yerleşik cüzdan ve çok seviyeli referans sistemiyle desteklenir. Dijital araç yığınınızı yükseltmeyi ve yönetmeyi hızlı, güvenli ve tamamen basit hale getirmek için tasarlandı.',
+    },
+    tags: ['Next.js', 'AI Subscriptions', 'Crypto Payments', 'Telegram Bot'],
+    gradient: 'from-violet-500 to-purple-600',
+    github: null,
+    live: 'https://fandoq.net',
+    telegram: 'https://t.me/FandoqRobot',
+  },
+  {
     id: 12,
     title: {
       en: 'GigUP',
