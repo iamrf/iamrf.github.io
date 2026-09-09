@@ -37,8 +37,9 @@ describe('projects data', () => {
     }
   })
 
-  it('lists Fandoq first', () => {
+  it('lists Fandoq first and Qodo second', () => {
     expect(projects[0].title.en).toBe('Fandoq')
+    expect(projects[1].title.en).toBe('Qodo')
   })
 
   it('includes key portfolio apps', () => {
@@ -46,6 +47,7 @@ describe('projects data', () => {
     expect(titles).toEqual(
       expect.arrayContaining([
         'Fandoq',
+        'Qodo',
         'GigUP',
         'Cheetah Marketplace',
         'NarenjWeb',
@@ -53,6 +55,7 @@ describe('projects data', () => {
         'SurVPN',
         'FactorFA',
         'ChannelX',
+        'ChannelUp',
       ]),
     )
   })

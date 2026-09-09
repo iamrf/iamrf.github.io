@@ -23,9 +23,11 @@ describe('Projects', () => {
     expect(document.getElementById('projects')).toBeTruthy()
     expect(screen.getByRole('heading', { name: 'Projects' })).toBeInTheDocument()
     expect(screen.getByText('Fandoq')).toBeInTheDocument()
+    expect(screen.getByText('Qodo')).toBeInTheDocument()
     expect(screen.getByText('GigUP')).toBeInTheDocument()
     expect(screen.getByText('FactorFA')).toBeInTheDocument()
     expect(screen.getByText('ChannelX')).toBeInTheDocument()
+    expect(screen.getByText('ChannelUp')).toBeInTheDocument()
     expect(screen.getByText('Narenj Uploader')).toBeInTheDocument()
   })
 
@@ -39,6 +41,18 @@ describe('Projects', () => {
     const hrefs = links.map((a) => a.getAttribute('href'))
     expect(hrefs).toContain('https://fandoq.net')
     expect(hrefs).toContain('https://t.me/FandoqRobot')
+  })
+
+  it('exposes live and telegram links for Qodo', () => {
+    renderProjects()
+
+    const card = screen.getByText('Qodo').closest('article')
+    expect(card).toBeTruthy()
+
+    const links = within(card).getAllByRole('link')
+    const hrefs = links.map((a) => a.getAttribute('href'))
+    expect(hrefs).toContain('https://4voucher.vercel.app/en')
+    expect(hrefs).toContain('https://t.me/QodoRobot')
   })
 
   it('exposes live and telegram links for GigUP', () => {
@@ -63,5 +77,16 @@ describe('Projects', () => {
 
     expect(hrefs).toContain('https://github.com/iamrf/channelx')
     expect(hrefs).toContain('https://t.me/channel2x_bot')
+  })
+
+  it('exposes github link for ChannelUp', () => {
+    renderProjects()
+
+    const card = screen.getByText('ChannelUp').closest('article')
+    const hrefs = within(card)
+      .getAllByRole('link')
+      .map((a) => a.getAttribute('href'))
+
+    expect(hrefs).toContain('https://github.com/iamrf/channelup')
   })
 })
