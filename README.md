@@ -61,9 +61,13 @@ Full setup: see **[DEPLOY.md](./DEPLOY.md)**.
 
 Projects live in `src/data/projects.js`. Each entry supports:
 
-- `title` / `description` (`en`, `fa`)
+- `title` / `description` for all site locales: `en`, `fa`, `ar`, `ur`, `es`, `ru`, `zh`, `tr`
 - `tags`, `gradient`
-- optional `live`, `github`, `telegram` URLs
+- optional `live`, `github` URLs
+- optional `telegram` (string or array of `t.me` URLs)
+- optional `contactDemo: true` — shows a “Contact for Demo” link to `#contact` (used by PostFlow)
+
+Locale UI strings (nav, CTAs, including `projects.contact_demo`) live under `src/locales/*.json`. Tests enforce key parity across languages and full project translation coverage.
 
 ## License
 

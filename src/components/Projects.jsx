@@ -1,8 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import { Github, ExternalLink, Send } from 'lucide-react'
+import { Github, ExternalLink, Send, Mail } from 'lucide-react'
 import SectionHeader from './SectionHeader'
 import { projects } from '../data/projects'
+
+function telegramLinks(project) {
+  if (Array.isArray(project.telegram)) return project.telegram.filter(Boolean)
+  return project.telegram ? [project.telegram] : []
+}
 
 export default function Projects() {
   const { t, i18n } = useTranslation()
@@ -49,7 +54,7 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center gap-4 pt-4 border-t border-white/5">
+                <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-white/5">
                   {project.github && (
                     <a
                       href={project.github}
@@ -72,9 +77,19 @@ export default function Projects() {
                       {t('projects.demo')}
                     </a>
                   )}
-                  {project.telegram && (
+                  {project.contactDemo && (
                     <a
-                      href={project.telegram}
+                      href="#contact"
+                      className="flex items-center gap-1.5 text-amber-400 hover:text-white text-sm transition-colors duration-200"
+                    >
+                      <Mail size={14} />
+                      {t('projects.contact_demo')}
+                    </a>
+                  )}
+                  {telegramLinks(project).map((href) => (
+                    <a
+                      key={href}
+                      href={href}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1.5 text-sky-400 hover:text-white text-sm transition-colors duration-200"
@@ -82,7 +97,7 @@ export default function Projects() {
                       <Send size={14} />
                       {t('projects.telegram')}
                     </a>
-                  )}
+                  ))}
                 </div>
               </div>
             </motion.article>

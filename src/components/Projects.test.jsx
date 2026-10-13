@@ -1,5 +1,5 @@
-import { describe, it, expect, beforeAll } from 'vitest'
-import { render, screen, within } from '@testing-library/react'
+import { describe, it, expect, beforeAll, afterEach } from 'vitest'
+import { render, screen, within, act } from '@testing-library/react'
 import { I18nextProvider } from 'react-i18next'
 import i18n from '../i18n'
 import Projects from './Projects'
@@ -17,6 +17,12 @@ describe('Projects', () => {
     await i18n.changeLanguage('en')
   })
 
+  afterEach(async () => {
+    await act(async () => {
+      await i18n.changeLanguage('en')
+    })
+  })
+
   it('renders the projects section and featured apps', () => {
     renderProjects()
 
@@ -24,6 +30,8 @@ describe('Projects', () => {
     expect(screen.getByRole('heading', { name: 'Projects' })).toBeInTheDocument()
     expect(screen.getByText('Fandoq')).toBeInTheDocument()
     expect(screen.getByText('Qodo')).toBeInTheDocument()
+    expect(screen.getByText('PostFlow')).toBeInTheDocument()
+    expect(screen.getByText('Link to File')).toBeInTheDocument()
     expect(screen.getByText('GigUP')).toBeInTheDocument()
     expect(screen.getByText('FactorFA')).toBeInTheDocument()
     expect(screen.getByText('ChannelX')).toBeInTheDocument()
@@ -53,6 +61,30 @@ describe('Projects', () => {
     const hrefs = links.map((a) => a.getAttribute('href'))
     expect(hrefs).toContain('https://4voucher.vercel.app/en')
     expect(hrefs).toContain('https://t.me/QodoRobot')
+  })
+
+  it('exposes contact-for-demo on PostFlow', () => {
+    renderProjects()
+
+    const card = screen.getByText('PostFlow').closest('article')
+    expect(card).toBeTruthy()
+
+    const demoLink = within(card).getByRole('link', { name: /contact for demo/i })
+    expect(demoLink).toHaveAttribute('href', '#contact')
+  })
+
+  it('exposes both telegram bots for Link to File', () => {
+    renderProjects()
+
+    const card = screen.getByText('Link to File').closest('article')
+    expect(card).toBeTruthy()
+
+    const hrefs = within(card)
+      .getAllByRole('link')
+      .map((a) => a.getAttribute('href'))
+
+    expect(hrefs).toContain('https://t.me/downloadtofile_bot')
+    expect(hrefs).toContain('https://t.me/LinkDrop_robot')
   })
 
   it('exposes live and telegram links for GigUP', () => {
@@ -88,5 +120,15 @@ describe('Projects', () => {
       .map((a) => a.getAttribute('href'))
 
     expect(hrefs).toContain('https://github.com/iamrf/channelup')
+  })
+
+  it('shows localized PostFlow title when language is Persian', async () => {
+    await act(async () => {
+      await i18n.changeLanguage('fa')
+    })
+    renderProjects()
+
+    expect(screen.getByText('پست‌فلو')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'تماس برای دمو' })).toBeInTheDocument()
   })
 })

@@ -77,7 +77,7 @@ npm run build
 npm run ci
 ```
 
-Tests cover portfolio data integrity, locale key parity, and core React components (24 tests).
+Tests cover portfolio data integrity (including full 8-locale project copy), locale key parity, and core React components. Run `npm test` to see the current count.
 
 ---
 

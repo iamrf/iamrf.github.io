@@ -27,7 +27,15 @@ describe('locale catalogs', () => {
     expect(en.nav.projects).toBeTruthy()
     expect(en.projects.telegram).toBeTruthy()
     expect(en.projects.demo).toBeTruthy()
+    expect(en.projects.contact_demo).toBeTruthy()
     expect(en.hero.name).toBe('Aref Fallah')
+  })
+
+  it('every locale has a non-empty contact_demo label', () => {
+    for (const [lang, catalog] of Object.entries(locales)) {
+      expect(catalog.projects.contact_demo, `${lang}.projects.contact_demo`).toBeTruthy()
+      expect(catalog.projects.contact_demo.trim().length).toBeGreaterThan(0)
+    }
   })
 
   it.each(Object.keys(locales))('%s matches english key structure', (lang) => {
